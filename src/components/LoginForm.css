@@ -1,0 +1,135 @@
+.login-form{
+    height: 500px;
+    width: 700px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.header{
+    flex: 0 0 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E3F2FD   ;
+    
+    font-size: 30px;
+    font-weight: 700;
+}
+.login-button{
+    width: 50%;
+    height: 15%;
+    background-color: #008cff;
+    border-style: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    outline: none;
+}
+.login-button:hover{
+    box-shadow: 0 5px 30px 0 #008cff;
+    cursor: pointer;
+}
+.login-button:active{
+    transform: scale(0.95,0.95)
+}
+.login-textfield{
+    position: relative;
+    margin-bottom: 45px;
+}
+input{
+    font-size: 18px;
+    
+    display: block;
+    width: 300px;
+    border:none;
+    border-bottom:1px solid #757575;
+}
+input:focus     { outline:none; }
+label{
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 0;
+    transition: 0.2s ease all;
+}
+input:focus ~ label {
+    top: 35px;
+    font-size: 14px;
+    color: #008cff;
+}
+.bar{
+    position:relative;
+    display: block;
+    width: 300px;
+}
+.bar:before, .bar:after{
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background:#008cff;
+    transition: 0.2s ease all;
+}
+.bar:before{
+    left: 50%;
+}
+.bar:after{
+    right: 50%;
+}
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+}
+.highlight{
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+input:focus ~ .highlight {
+    animation:inputHighlighter 0.3s ease;
+}
+@keyframes inputHighlighter {
+    from  { background: #008cff; }
+    to    { width:0; background:transparent; }
+  }
+.textfields{
+    display:flex;
+    justify-content: center;
+    
+}
+.login-textfield:first-child{
+    margin-right: 30px;
+}
+.login-container{
+    padding:30px;
+    flex: 1 0;
+}
+.labelActive{
+    top: 35px;
+    font-size: 14px;
+    color: #008cff;
+}
+.login-form-links{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.login-form-link{
+    color: #008cff;
+    cursor: pointer;
+    font-size: 14px;
+}
+.login-form-link:first-child{
+    margin-right: 30px;
+}

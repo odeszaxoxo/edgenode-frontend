@@ -1,0 +1,20 @@
+import React from 'react';
+import './Header.css';
+import logo from '../assets/logo2.png';
+
+export const HeaderComponent = () => {
+    
+    return (
+        <div className="main-header">
+            <div className="main-header-wrapper">
+                <img className="main-header-logo" src={logo}/>
+                <a className="main-header-button">О системе</a>
+                <a className="main-header-button">Контакты</a>
+                <a className="main-header-button">
+                <i className="material-icons">search</i>
+                </a>
+                <a className="main-header-button-login">Войти</a>
+            </div>
+        </div>
+    );
+}
