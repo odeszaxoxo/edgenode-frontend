@@ -13,7 +13,7 @@ export const HeaderComponent = () => {
                 <a className="main-header-button">
                 <i className="material-icons">search</i>
                 </a>
-                <a className="main-header-button-login">Войти</a>
+                <a className="main-header-button-login"><i className="material-icons" id="responsive-icon">exit_to_app</i>Войти</a>
             </div>
         </div>
     );

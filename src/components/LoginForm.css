@@ -1,6 +1,6 @@
 .login-form{
-    height: 500px;
-    width: 700px;
+    height: 461px;
+    width: 663px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -8,29 +8,29 @@
     
 }
 .header{
-    flex: 0 0 120px;
+    flex: 0 0 108px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #E3F2FD   ;
     
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 36px;
+    font-weight: bold;
 }
 .login-button{
-    width: 50%;
-    height: 15%;
+    width: 313px;
+    height: 63px;   ;
     background-color: #008cff;
     border-style: none;
-    border-radius: 50px;
+    border-radius: 49px;
     font-size: 20px;
     font-weight: 400;
     color: white;
     outline: none;
 }
 .login-button:hover{
-    box-shadow: 0 5px 30px 0 #008cff;
+    box-shadow: 0 3px 30px 0 #008cff;
     cursor: pointer;
 }
 .login-button:active{
@@ -38,20 +38,20 @@
 }
 .login-textfield{
     position: relative;
-    margin-bottom: 45px;
+    margin-bottom: 92px;
 }
 input{
-    font-size: 18px;
+    font-size: 20px;
     
     display: block;
-    width: 300px;
+    width: 248px;
     border:none;
     border-bottom:1px solid #757575;
 }
 input:focus     { outline:none; }
 label{
     color: #999;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: normal;
     position: absolute;
     pointer-events: none;
@@ -67,7 +67,7 @@ input:focus ~ label {
 .bar{
     position:relative;
     display: block;
-    width: 300px;
+    width: 248px;
 }
 .bar:before, .bar:after{
     content: '';
@@ -112,24 +112,52 @@ input:focus ~ .highlight {
     margin-right: 30px;
 }
 .login-container{
-    padding:30px;
+    padding:42px;
     flex: 1 0;
 }
 .labelActive{
     top: 35px;
-    font-size: 14px;
+    font-size: 12px;
     color: #008cff;
 }
 .login-form-links{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 29px;
 }
 .login-form-link{
     color: #008cff;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
 }
 .login-form-link:first-child{
-    margin-right: 30px;
+    margin-right: 31px;
+}
+@media screen and (max-width:1200px){
+    
+    
+}
+@media screen and (max-width:992px){
+    .textfields{
+        display: flex;
+        flex-direction: column;
+    }
+    .login-textfield{
+        margin-bottom: 50px;
+    }
+    .login-form{
+        width: 443px;
+    }
+}
+@media screen and (max-width:768px){
+    .textfields{
+        display: flex;
+        flex-direction: column;
+    }
+    .login-textfield{
+        margin-bottom: 30px;
+    }
+    .login-form{
+        width: 343px;
+    }
 }

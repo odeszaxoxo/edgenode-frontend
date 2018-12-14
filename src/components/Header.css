@@ -7,18 +7,20 @@
 .main-header-wrapper{
     display: flex;
     align-items: center;
-    width: 972px;
+    width: 1233px;
     opacity: 0.6;
 }
 .main-header-logo{
-    height: 50px;
-    margin-right: 30px;
+    height: 42px;
+    width: 144px;
+    margin-right: 37px;
 }
 .main-header-button{
     color: lightgray;
-    font-weight: 600;
-    margin-left: 20px;
+    white-space: nowrap;
+    margin-left: 64px;
     cursor: pointer;
+    font-size: 16px;
 }
 .main-header-button-login{
     display: flex;
@@ -27,8 +29,34 @@
     color: #2196F3;
     border: 1px solid #2196F3;
     height:40px ;
-    width: 100px;
-    border-radius: 20px;
+    width: 127px;
+    border-radius: 21px;
     margin-left: auto;
     cursor: pointer;
+    
+}
+#responsive-icon{
+    display: none;
+}
+@media screen and (max-width:1200px){
+    
+}
+@media screen and (max-width:992px){
+    
+}
+@media screen and (max-width:768px){
+    .main-header-button-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: lightgray;
+        border: 0;
+        
+        margin-left: auto;
+        cursor: pointer;
+        font-size: 0;
+    }
+    #responsive-icon{
+        display: block;
+    }
 }

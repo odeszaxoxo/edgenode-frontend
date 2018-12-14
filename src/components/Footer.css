@@ -1,5 +1,5 @@
 .footer {
-    flex: 0 0 150px;
+    flex: 0 0 100px;
     background-color: #0b122a;
     padding: 40px;
     display: flex;
@@ -9,8 +9,10 @@
     
 }
 .main-footer-logo{
-    height: 50px;
-    margin-right: 30px;
+    height: 42px;
+    width: 144px;
+    margin-right: 72px;
+    cursor: pointer;
 }
 .links-container{
     display: flex;
@@ -20,23 +22,66 @@
 .main-footer-link{
     color: lightgray;
     line-height: 30px;
+    cursor: pointer;
+    white-space: nowrap;
 }
 .contact-info-container{
     display: flex;
     flex-direction: column;   
     color: lightgray;
-    margin-left: 30px;
+    margin-left: 34px;
     
 }
 .contact-info-container-title{
-    font-weight: 600;
+    font-weight: bold;
     
 }
 .contact-info-text{
-    line-height: 50px;
+    line-height: 50px;  
+    white-space: nowrap;
 }
 .footer-wrapper{
     display: flex;
     width: 972px;
 }
-
+@media screen and (max-width:1200px){
+    .footer-wrapper{
+        width: 1200px;
+        height: 100px;
+    }
+    
+}
+@media screen and (max-width:992px){
+    .footer-wrapper{
+        width: 970px;
+        height: 80px;
+    }
+    .contact-info-container-title{
+        font-size: 14px;
+    }
+    .contact-info-text{
+        font-size: 14px;
+        line-height: 35px;
+    }
+    .main-footer-link{
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+@media screen and (max-width:768px){
+    .footer-wrapper{
+        width: 750px;
+        height: 60px;
+    }
+    .contact-info-container-title{
+        font-size: 12px;
+    }
+    .contact-info-text{
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .main-footer-link{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
