@@ -1,0 +1,24 @@
+.registration-form-container{
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../assets/campus.png);
+}
+.container__header{
+    flex: 0 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.container__registration-form{
+    flex: 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-button{
+    background: none;
+    color:#BDBDBD;
+    border-style: none;
+    width: 7%;
+}

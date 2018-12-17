@@ -1,24 +1,11 @@
 @import '../variables';
-.login-form{
-    height: 461px;
-    width: 663px;
+.registration-form{
+    height: 663px;
+    width: 763px;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    &-link{
-        color: #008cff;
-        cursor: pointer;
-        font-size: 12px;
-        &:first-child{
-            margin-right: 31px;
-        }
-    }
-    &-links{
-        display: flex;
-        justify-content: center;
-        margin-top: 29px;
-    }
 }
 .header{
     flex: 0 0 108px;
@@ -27,38 +14,18 @@
     align-items: center;
     justify-content: center;
     background-color: #E3F2FD   ;
-    
     font-size: 36px;
     font-weight: bold;
 }
-.login-button{
-    width: 313px;
-    height: 63px;   ;
-    background-color: $lightblue;
-    border-style: none;
-    border-radius: 49px;
-    font-size: 20px;
-    font-weight: 400;
-    color: white;
-    outline: none;
-    &:hover{
-        box-shadow: 0 3px 30px 0 #008cff;
-        cursor: pointer;
-    }
-    &:active{
-        transform: scale(0.95,0.95)
-    }
-}
-.login-textfield{
+.registration-textfield{
     position: relative;
-    margin-bottom: 92px;
+    margin-bottom: 64px;
     &:first-child{
         margin-right: 30px;
     }
 }
 input{
     font-size: 20px;
-    
     display: block;
     width: 248px;
     border:none;
@@ -123,12 +90,45 @@ label{
     from  { background: #008cff; }
     to    { width:0; background:transparent; }
   }
-.textfields{
+.registration-textfields{
+    flex-direction: column;
+} 
+.layer{
     display:flex;
     justify-content: center; 
+}   
+#name-input{
+    font-size: 20px;
+    display: block;
+    width: 532px;
+    border:none;
+    border-bottom:1px solid #757575;
+    &:focus     { outline:none; }
+    &:focus ~ label {
+        top: 35px;
+        font-size: 14px;
+        color: $lightblue;
+    }
+    &:focus {
+        &~ .bar{
+        width: 532px;
+        &:before{width: 50%;}
+        &:after{width: 50%;}
+        }
+    }
+    &:focus ~ .highlight {
+        animation:inputHighlighter 0.3s ease;
+    }
 }
-.login-container{
-    padding:42px;
+#fullname-textfield{
+    position: relative;
+    margin-bottom: 64px;
+    &:first-child{
+        margin-right: 0px;
+    }
+}
+.registration-container{
+    padding:62px;
     flex: 1 0;
     display: flex;
     flex-direction: column;
@@ -139,7 +139,7 @@ label{
     font-size: 12px;
     color: #008cff;
 }
-.login-button{
+.registration-button{
         position: relative; 
         display: inline-block;
         box-sizing: border-box;
@@ -147,7 +147,7 @@ label{
         border-radius: 49px;
         padding: 0 16px;
         width: 313px;
-        height: 63px;
+        min-height: 63px;
         vertical-align: middle;
         text-align: center;
         text-overflow: ellipsis;
@@ -223,6 +223,104 @@ label{
             border: none;
         }
 }
+.registration-select{
+    width: 248px;
+    position: relative;
+    right: 0;
+    top: 40%;
+    left: 0;
+    margin-bottom: 92px;
+}
+select {
+    width: 248px;
+    &:after{
+        position: absolute;
+	top: 18px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid rgba(0, 0, 0,0.5);
+	pointer-events: none;
+    }
+}
+.select-text{
+    position: relative;
+	background-color: transparent;
+    width: 248px;
+    padding-top: 1px;
+	font-size: 20px;
+	border-radius: 0;
+	border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    &:focus{
+        outline: none;
+	    border-bottom: 1px solid rgba(0,0,0,0);
+    }
+}
+.select .select-text {
+	appearance: none;
+	-webkit-appearance:none
+}
+.select-label {
+	color: rgba(0,0,0, 0.26);
+	font-size: 20px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 0;
+	top: 10px;
+	transition: 0.2s ease all;
+}
+.select-text:focus ~ .select-label, .select-text:valid ~ .select-label {
+	color: #2F80ED;
+	top: 35px;
+	transition: 0.2s ease all;
+	font-size: 40px;
+}
+.select-bar {
+	position: relative;
+	display: block;
+    width: 248px;
+    &:before, &:after {
+    content: '';
+	height: 2px;
+	width: 0;
+	bottom: 1px;
+	position: absolute;
+	background: #2F80ED;
+	transition: 0.2s ease all;
+    }
+    &:before {
+        left: 50%;
+    }
+    &:after {
+        right: 50%;
+    }
+}
+.select-text:focus ~ .select-bar:before, .select-text:focus ~ .select-bar:after {
+	width: 50%;
+}
+.select-highlight {
+	position: absolute;
+	height: 60%;
+	width: 100px;
+	top: 25%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+.registration-checkbox {
+    position: relative;
+    color: lightgrey;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
 
 @media screen and (max-width:1200px){
     
@@ -233,10 +331,10 @@ label{
         display: flex;
         flex-direction: column;
     }
-    .login-textfield{
+    .registration-textfield{
         margin-bottom: 50px;
     }
-    .login-form{
+    .registration-form{
         width: 443px;
     }
 }
@@ -245,10 +343,10 @@ label{
         display: flex;
         flex-direction: column;
     }
-    .login-textfield{
+    .registration-textfield{
         margin-bottom: 30px;
     }
-    .login-form{
+    .registration-form{
         width: 343px;
     }
 }

@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './LoginForm.scss';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {RegistrationComponent} from './RegistrationForm'
+import App from '../App';
 
 export class LoginFormComponent extends Component {
 
@@ -26,32 +29,32 @@ export class LoginFormComponent extends Component {
     render() {
 
         return (
-            <div className="login-form">
-                <div className="header">Авторизоваться</div>
-                  <div className="login-container">
-                    <div className="textfields">
-                        <div className="login-textfield">
-                            <input type="email" value={this.state.userName} onChange={this.userNameChangeHandler} autoComplete="off"></input>
-                            <span className="highlight"></span>
-                            <span className="bar"></span>
-                            <label className={(this.state.userName.length===0 ? "": "labelActive")}>Электронная почта</label>
+                <div className="login-form">
+                    <div className="header">Авторизоваться</div>
+                    <div className="login-container">
+                        <div className="textfields">
+                            <div className="login-textfield">
+                                <input type="email" value={this.state.userName} onChange={this.userNameChangeHandler} autoComplete="off"></input>
+                                <span className="highlight"></span>
+                                <span className="bar"></span>
+                                <label className={(this.state.userName.length===0 ? "": "labelActive")}>Электронная почта</label>
+                            </div>
+                            <div className='login-textfield'>
+                                <input type="password" value={this.state.userPassword} onChange={this.userPasswordChangeHandler} autoComplete="new-password"></input>
+                                <span className="highlight"></span>
+                                <span className="bar"></span>
+                                <label className={(this.state.userPassword.length===0 ? "": "labelActive")}>Пароль</label>
+                            </div>
                         </div>
-                        <div className='login-textfield'>
-                            <input type="password" value={this.state.userPassword} onChange={this.userPasswordChangeHandler} autoComplete="new-password"></input>
-                            <span className="highlight"></span>
-                            <span className="bar"></span>
-                            <label className={(this.state.userPassword.length===0 ? "": "labelActive")}>Пароль</label>
-                        </div>
-                    </div>
-                
-                    <button className="login-button" onClick={this.submitForm}>Авторизоваться</button>
-                    <div className="login-form-links">
-                        <a className="login-form-link">Забыли пароль?</a>
-                        <a className="login-form-link">Создать новый аккаунт</a>
-                    </div>
                     
-                  </div>
-            </div>
+                        <button className="login-button" onClick={this.submitForm}>Авторизоваться</button>
+                        <div className="login-form-links">
+                            <Link to="/recovery/" className="login-form-link">Забыли пароль?</Link>
+                            <Link to="/registration/" className="login-form-link">Создать новый аккаунт</Link>
+                        </div>
+                        
+                    </div>
+                </div>
         );
     }
 }

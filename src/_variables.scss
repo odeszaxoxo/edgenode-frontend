@@ -2,3 +2,9 @@ $lightblue:#008cff;
 @mixin marginLeft {
     margin-left: 40px;
 }
+$color-black: "0,0,0";
+$select-background-color: transparent;
+$select-border-color: unquote("rgba(#{$color-black}, 0.12)") !default;
+$select-font-size: 16px;
+$select-color: unquote("rgba(#{$color-black}, 0.26)") !default;
+$select-padding: 1px;
