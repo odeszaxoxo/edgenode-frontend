@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
 }
-.header{
+.registration-form__header{
     flex: 0 0 108px;
     width: 100%;
     display: flex;
@@ -17,36 +17,43 @@
     font-size: 36px;
     font-weight: bold;
 }
-.registration-textfield{
+.registration-form__container{
+    padding:42px;
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registration__textfield{
     position: relative;
     margin-bottom: 64px;
     &:first-child{
         margin-right: 30px;
     }
 }
-input{
+.registration-form__input{
     font-size: 20px;
     display: block;
     width: 248px;
     border:none;
     border-bottom:1px solid #757575;
     &:focus     { outline:none; }
-    &:focus ~ label {
+    &:focus ~ .registration-form__input-label {
         top: 35px;
         font-size: 14px;
         color: $lightblue;
     }
     &:focus {
-        &~ .bar{
+        &~ .registration-form__input-bar{
         &:before{width: 50%;}
         &:after{width: 50%;}
         }
     }
-    &:focus ~ .highlight {
+    &:focus ~ .registration-form__input-highlight {
         animation:inputHighlighter 0.3s ease;
     }
 }
-label{
+.registration-form__input-label{
     color: #999;
     font-size: 20px;
     font-weight: normal;
@@ -54,9 +61,9 @@ label{
     pointer-events: none;
     left: 5px;
     top: 0;
-    transition: 0.2s ease all;
+    border-style: none;
 }
-.bar{
+.registration-form__input-bar{
     position:relative;
     display: block;
     width: 248px;
@@ -76,7 +83,7 @@ label{
         right: 50%;
     }
 }
-.highlight{
+.registration-form__input-highlight{
     position: absolute;
     height: 60%;
     width: 100px;
@@ -85,61 +92,53 @@ label{
     pointer-events: none;
     opacity: 0.5;
 }
-
 @keyframes inputHighlighter {
     from  { background: #008cff; }
     to    { width:0; background:transparent; }
   }
-.registration-textfields{
+.registration__textfields{
     flex-direction: column;
 } 
-.layer{
+.registration__textfields-layer{
     display:flex;
     justify-content: center; 
 }   
-#name-input{
+.registration-form__input_fullname{
     font-size: 20px;
     display: block;
     width: 532px;
     border:none;
     border-bottom:1px solid #757575;
     &:focus     { outline:none; }
-    &:focus ~ label {
+    &:focus ~ .registration-form__input-label {
         top: 35px;
         font-size: 14px;
         color: $lightblue;
     }
     &:focus {
-        &~ .bar{
+        &~ .registration-form__input-bar{
         width: 532px;
         &:before{width: 50%;}
         &:after{width: 50%;}
         }
     }
-    &:focus ~ .highlight {
+    &:focus ~ .registration-form__input-highlight {
         animation:inputHighlighter 0.3s ease;
     }
 }
-#fullname-textfield{
+.registration__textfield_fullname{
     position: relative;
     margin-bottom: 64px;
     &:first-child{
         margin-right: 0px;
     }
 }
-.registration-container{
-    padding:62px;
-    flex: 1 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.labelActive{
+.registration-form__input-label_active{
     top: 35px;
     font-size: 12px;
     color: #008cff;
 }
-.registration-button{
+.registration__button{
         position: relative; 
         display: inline-block;
         box-sizing: border-box;
@@ -223,35 +222,28 @@ label{
             border: none;
         }
 }
-.registration-select{
+.registration__textfields-select{
     width: 248px;
     position: relative;
-    right: 0;
-    top: 40%;
-    left: 0;
-    margin-bottom: 92px;
-}
-select {
-    width: 248px;
     &:after{
         position: absolute;
-	top: 18px;
-	right: 10px;
-	width: 0;
-	height: 0;
-	padding: 0;
-	content: '';
-	border-left: 6px solid transparent;
-	border-right: 6px solid transparent;
-	border-top: 6px solid rgba(0, 0, 0,0.5);
-	pointer-events: none;
-    }
+        top: 10px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        padding: 0;
+        content: '';
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid rgba(0, 0, 0,0.12);
+        pointer-events: none;
+        }
 }
-.select-text{
+.registration-form__select{
     position: relative;
 	background-color: transparent;
     width: 248px;
-    padding-top: 1px;
+    padding-top: 2px;
 	font-size: 20px;
 	border-radius: 0;
 	border: none;
@@ -261,27 +253,27 @@ select {
 	    border-bottom: 1px solid rgba(0,0,0,0);
     }
 }
-.select .select-text {
+.registration__textfields-select .registration-form__select {
 	appearance: none;
 	-webkit-appearance:none
 }
-.select-label {
-	color: rgba(0,0,0, 0.26);
-	font-size: 20px;
-	font-weight: normal;
-	position: absolute;
-	pointer-events: none;
-	left: 0;
-	top: 10px;
-	transition: 0.2s ease all;
+.registration-form__select-label {
+	color: #999;
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 0;
+    transition: 0.2s ease all;
 }
-.select-text:focus ~ .select-label, .select-text:valid ~ .select-label {
-	color: #2F80ED;
-	top: 35px;
-	transition: 0.2s ease all;
-	font-size: 40px;
+.registration-form__select-label_active{
+    top: 35px;
+    font-size: 12px;
+    color: #008cff;
+    transition: 0.2s ease all;
 }
-.select-bar {
+.registration-form__select-bar {
 	position: relative;
 	display: block;
     width: 248px;
@@ -301,10 +293,10 @@ select {
         right: 50%;
     }
 }
-.select-text:focus ~ .select-bar:before, .select-text:focus ~ .select-bar:after {
+.registration-form__select:focus ~ .registration-form__select-bar:before, .registration-form__select:focus ~ .registration-form__select-bar:after {
 	width: 50%;
 }
-.select-highlight {
+.registration-form__select-highlight {
 	position: absolute;
 	height: 60%;
 	width: 100px;
@@ -313,12 +305,78 @@ select {
 	pointer-events: none;
 	opacity: 0.5;
 }
-.registration-checkbox {
-    position: relative;
-    color: lightgrey;
-    font-size: 20px;
-    line-height: 1.5;
+@keyframes selectHighlighter {
+    from  { background: #008cff; }
+    to    { width:0; background:transparent; }
 }
+.registration__checkbox{
+    display: flex;
+    justify-content: flex-start;
+    min-height: 44px;
+}
+.registration-form__checkbox{
+    position: absolute; 
+    opacity: 0; 
+         & + .registration-form__checkbox-label {
+          position: relative;
+          cursor: pointer;
+          padding: 0;
+        }
+        & + .registration-form__checkbox-label:before {
+          content: '';
+          margin-right: 10px;
+          display: inline-block;
+          vertical-align: text-top;
+          width: 12px;
+          height: 12px;
+          background: white;
+          border-style: solid;
+          border-width: 1px;
+          border-color: #999;
+        }
+        &:hover + .registration-form__checkbox-label:before {
+          background: white;
+        }
+        &:focus + .registration-form__checkbox-label:before {
+          box-shadow: 0 0 0 3px rgba(0, 0, 0, 0);
+        }
+        &:checked + .registration-form__checkbox-label:before {
+          background: white;
+          
+        }
+        &:disabled + .registration-form__checkbox-label {
+          color: #b8b8b8;
+          cursor: auto;
+        }
+        &:disabled + .registration-form__checkbox-label:before {
+          box-shadow: none;
+          background: #ddd;
+        }
+        &:checked + .registration-form__checkbox-label:after {
+          content: '';
+          position: absolute;
+          left: 2px;
+          top: 6px;
+          background: $lightblue;
+          width: 2px;
+          height: 2px;
+          border-style: none;
+          box-shadow: 
+            2px 0 0 $lightblue,
+            4px 0 0 $lightblue,
+            4px -2px 0 $lightblue,
+            4px -4px 0 $lightblue,
+            4px -6px 0 $lightblue,
+            4px -7px 0 $lightblue;
+          transform: rotate(45deg);
+        }
+      }
+.registration-form__checkbox-label{
+    font-size: 12px;
+}
+
+ 
+
 
 
 

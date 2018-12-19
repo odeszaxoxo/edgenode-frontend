@@ -10,8 +10,7 @@ export class MainComponent extends Component {
 
         return (
             <div className="main">
-            <ContainerComponent></ContainerComponent>
-            <FooterComponent></FooterComponent>
+            Landing
             </div>
         );
     }

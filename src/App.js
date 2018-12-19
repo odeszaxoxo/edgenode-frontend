@@ -5,6 +5,7 @@ import { object } from 'prop-types';
 import { LoginFormComponent } from './components/LoginForm';
 import { RegistrationFormComponent } from "./containers";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import {ContainerComponent} from './components/Container';
 
 
 
@@ -27,11 +28,7 @@ class App extends Component {
 );
     return (
       <div className="App">
-        <Switch>
-            <Route exact path='/' component={MainComponent}/>
-            <Route path='/recovery' component={LoginFormComponent}/>
-            <Route path='/registration' component={RegistrationFormComponent}/>
-        </Switch>
+            <ContainerComponent></ContainerComponent>
       </div>
     );
   }

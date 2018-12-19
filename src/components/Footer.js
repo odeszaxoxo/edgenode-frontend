@@ -7,21 +7,21 @@ export const FooterComponent = ()=> {
     return (
         <div className="footer">
             <div className="footer-wrapper">
-                <div className="logo-container">
-                    <img className="main-footer-logo" src={logo}/>
+                <div className="footer_wrapper__logo-container">
+                    <img className="footer_wrapper__logo-container-image" src={logo}/>
                 </div>
-                <div className="links-container">
-                    <a className="main-footer-link">О системе</a>
-                    <a className="main-footer-link">Контакты</a>
-                    <a className="main-footer-link">Войти как сотрудник</a>
+                <div className="footer-wrapper__links-container">
+                    <a className="footer-wrapper__links-container-link">О системе</a>
+                    <a className="footer-wrapper__links-container-link">Контакты</a>
+                    <a className="footer-wrapper__links-container-link">Войти как сотрудник</a>
                 </div>
-                <div className="contact-info-container">
-                    <span className="contact-info-container-title">E-mail</span>
-                    <span className="contact-info-text">radedu@education.com</span>
+                <div className="footer-wrapper__contact-info-container">
+                    <span className="footer-wrapper__contact-info-container-title">E-mail</span>
+                    <span className="footer-wrapper__contact-info-container-text">radedu@education.com</span>
                 </div>
-                <div className="contact-info-container">
-                    <span className="contact-info-container-title">Горячая линия</span>
-                    <span className="contact-info-text">+7(999)456-56-65</span>
+                <div className="footer-wrapper__contact-info-container">
+                    <span className="footer-wrapper__contact-info-container-title">Горячая линия</span>
+                    <span className="footer-wrapper__contact-info-container-text">+7(999)456-56-65</span>
                 </div>
             </div>
         </div>

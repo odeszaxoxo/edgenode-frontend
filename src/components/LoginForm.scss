@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    &-link{
+    &__link{
         color: #008cff;
         cursor: pointer;
         font-size: 12px;
@@ -14,13 +14,13 @@
             margin-right: 31px;
         }
     }
-    &-links{
+    &__links{
         display: flex;
         justify-content: center;
         margin-top: 29px;
     }
 }
-.header{
+.login-form__header{
     flex: 0 0 108px;
     width: 100%;
     display: flex;
@@ -30,6 +30,13 @@
     
     font-size: 36px;
     font-weight: bold;
+}
+.login-form__container{
+    padding:42px;
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .login-button{
     width: 313px;
@@ -49,14 +56,14 @@
         transform: scale(0.95,0.95)
     }
 }
-.login-textfield{
+.login-form__textfield{
     position: relative;
     margin-bottom: 92px;
     &:first-child{
         margin-right: 30px;
     }
 }
-input{
+.login-form__input{
     font-size: 20px;
     
     display: block;
@@ -64,22 +71,22 @@ input{
     border:none;
     border-bottom:1px solid #757575;
     &:focus     { outline:none; }
-    &:focus ~ label {
+    &:focus ~ .login-form__input-label {
         top: 35px;
         font-size: 14px;
         color: $lightblue;
     }
     &:focus {
-        &~ .bar{
+        &~ .login-form__input-bar{
         &:before{width: 50%;}
         &:after{width: 50%;}
         }
     }
-    &:focus ~ .highlight {
+    &:focus ~ .login-form__input-highlight {
         animation:inputHighlighter 0.3s ease;
     }
 }
-label{
+.login-form__input-label{
     color: #999;
     font-size: 20px;
     font-weight: normal;
@@ -89,7 +96,7 @@ label{
     top: 0;
     transition: 0.2s ease all;
 }
-.bar{
+.login-form__input-bar{
     position:relative;
     display: block;
     width: 248px;
@@ -109,7 +116,7 @@ label{
         right: 50%;
     }
 }
-.highlight{
+.login-form__input-highlight{
     position: absolute;
     height: 60%;
     width: 100px;
@@ -123,23 +130,16 @@ label{
     from  { background: #008cff; }
     to    { width:0; background:transparent; }
   }
-.textfields{
+.login-form__textfields{
     display:flex;
     justify-content: center; 
 }
-.login-container{
-    padding:42px;
-    flex: 1 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.labelActive{
+.login-form__input-label_active{
     top: 35px;
     font-size: 12px;
     color: #008cff;
 }
-.login-button{
+.login-form__button{
         position: relative; 
         display: inline-block;
         box-sizing: border-box;
@@ -229,11 +229,11 @@ label{
     
 }
 @media screen and (max-width:992px){
-    .textfields{
+    .login-form__textfields{
         display: flex;
         flex-direction: column;
     }
-    .login-textfield{
+    .login-form__textfield{
         margin-bottom: 50px;
     }
     .login-form{
@@ -241,11 +241,11 @@ label{
     }
 }
 @media screen and (max-width:768px){
-    .textfields{
+    .login-form__textfields{
         display: flex;
         flex-direction: column;
     }
-    .login-textfield{
+    .login-form__textfield{
         margin-bottom: 30px;
     }
     .login-form{

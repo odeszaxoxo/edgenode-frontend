@@ -3,25 +3,25 @@
     justify-content: center;
     width: 100%;
 }
-.main-header-wrapper{
+.main-header__wrapper{
     display: flex;
     align-items: center;
     width: 1233px;
     opacity: 0.6;
 }
-.main-header-logo{
+.main-header__wrapper-logo{
     height: 42px;
     width: 144px;
     margin-right: 37px;
 }
-.main-header-button{
+.main-header__wrapper-button{
     color: lightgray;
     white-space: nowrap;
     margin-left: 64px;
     cursor: pointer;
     font-size: 16px;
 }
-.main-header-button-login{
+.main-header__wrapper-button-login{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,6 @@
     border-radius: 21px;
     margin-left: auto;
     cursor: pointer;
-    
 }
 #responsive-icon{
     display: none;
