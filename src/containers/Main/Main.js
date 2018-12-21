@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Main.scss';
-import {FooterComponent} from '../../components/Footer';
-import {ContainerComponent} from '../../components/Container';
+import {LandingHeaderComponent} from '../../components/LandingHeader'
+import {LandingContentComponent} from '../../components/LandingContent'
 
 
 export class MainComponent extends Component {
@@ -9,8 +9,9 @@ export class MainComponent extends Component {
     render() {
 
         return (
-            <div className="main">
-            Landing
+            <div className="landing">
+            <LandingHeaderComponent></LandingHeaderComponent>
+            <LandingContentComponent></LandingContentComponent>
             </div>
         );
     }

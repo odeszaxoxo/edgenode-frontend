@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Container.scss';
 import {LoginFormComponent} from "./LoginForm"
 import {HeaderComponent} from "./Header";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 import {RegistrationComponent} from './RegistrationForm';
 import { FooterComponent } from './Footer';
 import {MainComponent} from '../containers/Main/Main'
@@ -17,7 +17,7 @@ export class ContainerComponent extends Component {
                 <div className="container__header">
                     <HeaderComponent></HeaderComponent>
                 </div>
-                <div className="container__login-form">
+                <div className="container__content-form">
                 <Route path='/recovery' component={LoginFormComponent}/>
                 <Route path='/auth' component={LoginFormComponent}/>
                 <Route path='/registration' component={RegistrationComponent}/>

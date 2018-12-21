@@ -1,0 +1,17 @@
+.slide{
+    height: 532px;
+    width: 395px;
+    opacity: 0.5;
+    &__content{
+        height: 532px;
+        width: 375px;
+        background-color: white;
+        display: inline-block;
+        margin-left: 20px;
+    }
+    &_selected{
+        opacity: 1;
+    }
+}
+
+

@@ -3,10 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { Router, Route, IndexRoute, BrowserRouter } from 'react-router-dom'
-import {LoginFormComponent} from './components/LoginForm';
-import {RegistrationComponent} from './components/RegistrationForm'
-import {MainComponent} from './containers/Main/Main';
+import {BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render((
     <BrowserRouter>

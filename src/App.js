@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import { MainComponent } from "./containers";
-import { object } from 'prop-types';
-import { LoginFormComponent } from './components/LoginForm';
-import { RegistrationFormComponent } from "./containers";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import {ContainerComponent} from './components/Container';
 
 
