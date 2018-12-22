@@ -1,3 +1,4 @@
+@import '../../variables';
 .slide{
     height: 532px;
     width: 395px;
@@ -11,6 +12,36 @@
     }
     &_selected{
         opacity: 1;
+    }
+    &__image-container{
+        background: $lightblue;
+        height: 223.86px;
+        width: 375px;
+        position: absolute;
+        bottom: -2px;
+        background-color: rgba($lightblue, 0.1);
+    }
+    &__image{
+        width: 318.1px;
+        height: auto;
+        position: absolute;
+        left: 57px;
+    }
+    &__title{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__text{
+        width: 277px;
+        height: 144px;
+        margin-left: 55px;
+        margin-top: 36px;
+    }
+    &__text-content{
+        margin-top: 32px;
+        white-space: pre-line;
+        font-size:16px;
+        line-height: 24px;
     }
 }
 

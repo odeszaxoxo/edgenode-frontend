@@ -3,6 +3,7 @@ import './LandingSliderSmall.scss';
 import SlideSmall from './SlideSmall'
 import LeftArrow from './LeftArrow'
 import RightArrow from './RightArrow'
+import image1 from '../../assets/slider-image1.png';
 
 
 export class SliderComponent extends Component {
@@ -10,7 +11,7 @@ export class SliderComponent extends Component {
     constructor(props) {
         super(props)
 
-        this.state = {objects:["1","2","3","4"], currentIndex:0, translateValue:0}
+        this.state = {objects:[image1,image1,image1,image1], currentIndex:0, translateValue:0}
     }
 
     goToPrevSlide = () => {
