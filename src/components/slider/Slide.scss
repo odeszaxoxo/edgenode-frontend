@@ -1,14 +1,20 @@
-.slide{
+.text-slide{
     height: 532px;
-    width: 395px;
+    position: relative;
     opacity: 0.5;
+    display: inline-block;
+    
     &__content{
-        height: 532px;
-        width: 375px;
+        height: 100%;
+        width: 100%;
         background-color: white;
-        display: inline-block;
-        margin-left: 20px;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 200px;
     }
+    
     &_selected{
         opacity: 1;
     }

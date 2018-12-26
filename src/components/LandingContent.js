@@ -31,10 +31,10 @@ export const LandingContentComponent = () => {
                         <p className="landing-content__block-text">Бюджетное образовательное учреждение высшего образования в области культуры и искусства. </p>
                     </div>
                 </div>
-            <h1 className="landing-content__container-title-middle">Университеты</h1>
-                <div className="landing-content__container-slider">
+            <h1 className="landing-content__container-title-middle"></h1>
+                <div className="landing-content__slider">
                     <BigSliderComponent></BigSliderComponent>
-                </div>
+                </div>    
             <h1 className="landing-content__container-title">Процесс подачи</h1>
                 <div className="landing-content__info">
                     <div className="landing-image__container">
@@ -44,7 +44,7 @@ export const LandingContentComponent = () => {
                             </div>
                             <div className="landing-image__text">
                                 <div className="landing-image__text-title">Шаг 1</div>
-                                <div className="landing-image__text-content">1111111 1111111111111 111111111111111</div>
+                                <div className="landing-image__text-content">Бюджетное образовательное учреждение высшего образования в области культуры и искусства.</div>
                             </div>
                         </div>
                         <div className="landing-image__line-wrapper">
@@ -56,7 +56,7 @@ export const LandingContentComponent = () => {
                             </div>
                             <div className="landing-image__text">
                                 <div className="landing-image__text-title">Шаг 2</div>
-                                <div className="landing-image__text-content">1111111 1111111111111 111111111111111</div>
+                                <div className="landing-image__text-content">Бюджетное образовательное учреждение высшего образования в области культуры и искусства.</div>
                             </div>
                         </div>
                         <div className="landing-image__line-wrapper">
@@ -68,7 +68,7 @@ export const LandingContentComponent = () => {
                             </div>
                             <div className="landing-image__text">
                                 <div className="landing-image__text-title">Шаг 3</div>
-                                <div className="landing-image__text-content">1111111 1111111111111 111111111111111</div>
+                                <div className="landing-image__text-content">Бюджетное образовательное учреждение высшего образования в области культуры и искусства.</div>
                             </div>
                         </div>
                         <div className="landing-image__line-wrapper">
@@ -80,7 +80,7 @@ export const LandingContentComponent = () => {
                             </div>
                             <div className="landing-image__text">
                                 <div className="landing-image__text-title">Шаг 4</div>
-                                <div className="landing-image__text-content">1111111 1111111111111 111111111111111</div>
+                                <div className="landing-image__text-content">Бюджетное образовательное учреждение высшего образования в области культуры и искусства.</div>
                             </div>
                         </div>
                     </div>
