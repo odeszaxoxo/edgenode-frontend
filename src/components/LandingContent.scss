@@ -64,8 +64,8 @@
    width: 100%;
 }
 .landing-image__image-wrapper{
-    width: 135px;
-    height: 148px;
+    width: 158px;
+    height: 106px;
     position: relative;
     &:after{
         content:"";
@@ -75,8 +75,8 @@
         border-radius: 50%;
         display: block;
         position: absolute;
-        top: calc(50% - 20px);
-        right: -20px;
+        top: -20px;
+        right: -15px;
     }
 }
 .landing-image__line{
@@ -110,7 +110,7 @@
     flex-direction: column;
 }
 .landing-image__line-wrapper{
-    height: 148px;
+    height: 4px;
     display: flex;
     align-items: center;
     flex: 1 0;

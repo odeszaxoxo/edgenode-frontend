@@ -14,7 +14,7 @@ export class LandingHeaderComponent extends Component {
                     <div className="landing-header__block">
                         <h1 className="landing-header__title">Поступление в ВУЗ на новом уровне</h1>
                         <p className="landing-header__text">Можно ли подать документы сразу в восемь вузов? До какого числа надо успеть? Edgenode оставит Вас без вопросов и упростит подачу документов в ВУЗ.</p>
-                        <Link to="/registration/" className="login-form__link"><button className="landing-header__registration-button">Зарегистрироваться</button></Link>
+                        <Link to="/main/registration" className="login-form__link"><button className="landing-header__registration-button">Зарегистрироваться</button></Link>
                      </div>
                      <div className="landing-header__block-slider">
                         <div className="landing-header__slider-small"><SliderComponent></SliderComponent></div>

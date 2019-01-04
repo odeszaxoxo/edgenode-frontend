@@ -8,14 +8,16 @@ export const HeaderComponent = () => {
     return (
         <div className="main-header">
             <div className="main-header__wrapper">
-                <Link to="/"><img className="main-header__wrapper-logo" src={logo} alt=""/></Link>
+                <Link to="/main"><img className="main-header__wrapper-logo" src={logo} alt=""/></Link>
                
-                <a className="main-header__wrapper-button">О системе</a>
-                <a className="main-header__wrapper-button">Контакты</a>
+                <Link to="/info" className="main-header__wrapper-button">О нас</Link>
+                <Link to="/info" className="main-header__wrapper-button">Проекты</Link>
+                <Link to="/info" className="main-header__wrapper-button">Регламент</Link>
+                <Link to="/info" className="main-header__wrapper-button">Партнеры</Link>
                 <a className="main-header__wrapper-button">
                 <i className="material-icons">search</i>
                 </a>
-                <Link to="/auth" className="main-header__wrapper-button-login"><i className="material-icons" id="responsive-icon">exit_to_app</i>Войти</Link>
+                <Link to="/main/auth" className="main-header__wrapper-button-login"><i className="material-icons" id="responsive-icon">exit_to_app</i>Войти</Link>
             </div>
         </div>
     );

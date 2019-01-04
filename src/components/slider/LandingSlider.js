@@ -7,7 +7,7 @@ export class BigSliderComponent extends Component {
     
     constructor(props) {
         super(props);
-        setInterval(() => {
+        this.timer = setInterval(() => {
             if(!this.state.isMouseOver){
                 this.goToNextSlide()
             }
@@ -15,6 +15,7 @@ export class BigSliderComponent extends Component {
         this.state = {objects:["1","2","3","4"], currentIndex:0, translateValue:0, isMouseOver:false}
     }
 
+    
     goToNextSlide = () => {
         if(this.state.currentIndex===this.state.objects.length-1){
             return this.setState({
@@ -46,7 +47,9 @@ export class BigSliderComponent extends Component {
         const container = document.querySelector('.text-slider__container');
         return container ? container.clientWidth : 0;
     }
-    
+    componentWillUnmount() {
+        clearInterval(this.timer)
+      }
     render() {
         return (
             <div className="text-slider">

@@ -18,10 +18,10 @@ export class ContainerComponent extends Component {
                     <HeaderComponent></HeaderComponent>
                 </div>
                 <div className="container__content-form">
-                <Route path='/recovery' component={LoginFormComponent}/>
-                <Route path='/auth' component={LoginFormComponent}/>
-                <Route path='/registration' component={RegistrationComponent}/>
-                <Route exact path='/' component={MainComponent}/>
+                <Route path='/main/recovery' component={LoginFormComponent}/>
+                <Route path='/main/auth' component={LoginFormComponent}/>
+                <Route path='/main/registration' component={RegistrationComponent}/>
+                <Route exact path='/main' component={MainComponent}/>
                 </div>
                 <div className="container__footer">
                 <FooterComponent></FooterComponent>

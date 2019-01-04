@@ -1,14 +1,17 @@
 import React from 'react';
 import './Footer.scss';
 import logo from '../assets/logo2.png';
+import {Link} from 'react-router-dom';
 
-export const FooterComponent = ()=> {
+export const FooterComponent = ({match})=> {
+
+    console.log(match);
     
     return (
         <div className="footer">
             <div className="footer-wrapper">
                 <div className="footer_wrapper__logo-container">
-                    <img className="footer_wrapper__logo-container-image" src={logo}/>
+                    <Link to="/main" className="main-footer__wrapper-button-login"><img className="footer_wrapper__logo-container-image" src={logo}/></Link>
                 </div>
                 <div className="footer-wrapper__links-container">
                     <a className="footer-wrapper__links-container-link">О системе</a>

@@ -110,7 +110,7 @@ export class RegistrationComponent extends Component {
                                 <div className="registration__textfields-layer">
                                     <div className="registration__checkbox">
                                         <input className="registration-form__checkbox" type="checkbox" id='q' onChange={this.userRightsChangeHandler} checked={this.userRights}/>
-                                        <label className="registration-form__checkbox-label" htmlFor="q">Я согласен/согласна с <Link to="/rules" className="registration-form__link">политикой конфиденциальности.</Link></label>
+                                        <label className="registration-form__checkbox-label" htmlFor="q">Я согласен/согласна с <Link to="main/rules" className="registration-form__link">политикой конфиденциальности.</Link></label>
                                     </div>
                                 </div>
                             </div>

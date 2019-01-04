@@ -47,8 +47,8 @@ export class LoginFormComponent extends Component {
                     
                         <button className="login-form__button" onClick={this.submitForm}>Авторизоваться</button>
                         <div className="login-form__links">
-                            <Link to="/recovery/" className="login-form__link">Забыли пароль?</Link>
-                            <Link to="/registration/" className="login-form__link">Создать новый аккаунт</Link>
+                            <Link to="/main/recovery" className="login-form__link">Забыли пароль?</Link>
+                            <Link to="/main/registration" className="login-form__link">Создать новый аккаунт</Link>
                         </div>
                         
                     </div>

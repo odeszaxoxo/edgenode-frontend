@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import {ContainerComponent} from './components/Container';
+import {ContainerComponent} from './components/Container'
+import {Route, Redirect, Switch} from 'react-router-dom';
+import {InfoContainerComponent} from './components/infopage/InfoContainer';
 
 
 
@@ -23,7 +25,11 @@ class App extends Component {
 );
     return (
       <div className="App">
-            <ContainerComponent></ContainerComponent>
+          <Switch>
+            <Redirect from="/" exact to="/main" />
+            <Route path='/main' component={ContainerComponent}/>
+          </Switch>
+            <Route path='/info' component={InfoContainerComponent}/>
       </div>
     );
   }

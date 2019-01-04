@@ -3,8 +3,10 @@ import './LandingContent.scss';
 import img1 from '../assets/landing-image1.png';
 import img2 from '.././assets/landing-image2.png';
 import img3 from '.././assets/landing-image3.png';
-import img4 from '.././assets/landing-image4.png';
-import img5 from '.././assets/landing-image5.png';
+import img4 from '.././assets/Frame1.png';
+import img5 from '.././assets/Frame2.png';
+import img6 from '.././assets/Frame3.png';
+import img7 from '.././assets/Frame4.png';
 import {BigSliderComponent} from './slider';
 import {Link} from 'react-router-dom';
 
@@ -64,7 +66,7 @@ export const LandingContentComponent = () => {
                         </div>
                         <div className="landing-image__wrapper">
                             <div className="landing-image__image-wrapper">
-                                <img src={img4} className="landing-image__image" />
+                                <img src={img6} className="landing-image__image" />
                             </div>
                             <div className="landing-image__text">
                                 <div className="landing-image__text-title">Шаг 3</div>
@@ -76,7 +78,7 @@ export const LandingContentComponent = () => {
                         </div>
                         <div className="landing-image__wrapper">
                             <div className="landing-image__image-wrapper">
-                                <img src={img5} className="landing-image__image" />
+                                <img src={img7} className="landing-image__image" />
                             </div>
                             <div className="landing-image__text">
                                 <div className="landing-image__text-title">Шаг 4</div>
@@ -87,7 +89,7 @@ export const LandingContentComponent = () => {
                 </div>
                 <div className="landing-footer__registration">
                     <h1 className="landing-footer__text">Готовы присоединиться?</h1>
-                    <Link to="/registration/" className="login-form__link"><button className="landing-footer__registration-button">Зарегистрироваться</button></Link>
+                    <Link to="/main/registration" className="login-form__link"><button className="landing-footer__registration-button">Зарегистрироваться</button></Link>
                 </div>
         </div>
     );
