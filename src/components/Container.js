@@ -6,6 +6,7 @@ import { Route } from "react-router-dom";
 import {RegistrationComponent} from './RegistrationForm';
 import { FooterComponent } from './Footer';
 import {MainComponent} from '../containers/Main/Main'
+import { UniversityInfoComponent } from '../containers/UniversityInfo';
 
 
 export class ContainerComponent extends Component {
@@ -21,6 +22,7 @@ export class ContainerComponent extends Component {
                 <Route path='/main/recovery' component={LoginFormComponent}/>
                 <Route path='/main/auth' component={LoginFormComponent}/>
                 <Route path='/main/registration' component={RegistrationComponent}/>
+                <Route path='/main/university' component={UniversityInfoComponent}/>
                 <Route exact path='/main' component={MainComponent}/>
                 </div>
                 <div className="container__footer">

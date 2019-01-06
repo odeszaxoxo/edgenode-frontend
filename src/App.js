@@ -3,6 +3,7 @@ import './App.css';
 import {ContainerComponent} from './components/Container'
 import {Route, Redirect, Switch} from 'react-router-dom';
 import {InfoContainerComponent} from './components/infopage/InfoContainer';
+import { UniversityInfoComponent } from './containers/UniversityInfo';
 
 
 

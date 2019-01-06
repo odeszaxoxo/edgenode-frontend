@@ -1,0 +1,1 @@
+export {UniversityInfoComponent} from './UniversityInfo'
