@@ -2,60 +2,54 @@
     display: flex;
     justify-content: center;
     width: 100%;
-}
-.info-header__wrapper{
-    display: flex;
-    align-items: center;
-    width: 1500px;
-}
-.info-header__wrapper-logo{
-    height: 59px;
-    width: 160px;
-    margin-right: 37px;
-}
-.info-header__wrapper-button{
-    color: black;
-    white-space: nowrap;
-    margin-left: 64px;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-}
-.info-header__wrapper-button-login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    border: 1px solid black;
-    height:40px ;
-    width: 127px;
-    border-radius: 21px;
-    margin-left: auto;
-    cursor: pointer;
-    text-decoration: none;
-}
-#responsive-icon{
-    display: none;
-}
-@media screen and (max-width:1200px){
-    
-}
-@media screen and (max-width:992px){
-    
-}
-@media screen and (max-width:768px){
-    .info-header-button-login{
+    &__wrapper{
         display: flex;
-        justify-content: center;
         align-items: center;
-        color: black;
-        border: 0;
-        
-        margin-left: auto;
-        cursor: pointer;
-        font-size: 0;
+        width: calc(100% - 216px);
+        margin-left: 108px;
+        margin-right: 108px;
+        &-logo{
+            height: 56px;
+            width: 144px;
+            margin-right: 37px;
+        }
+        &-button{
+            color: black;
+            white-space: nowrap;
+            margin-left: 64px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            &:hover{
+                font-weight: 600;
+            }
+        }
+        &-button-login{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            border: 1px solid black;
+            height: 40px ;
+            width: 127px;
+            border-radius: 21px;
+            margin-left: auto;
+            cursor: pointer;
+            text-decoration: none;
+            &:hover{
+                font-weight: 600;
+                border: 2px solid black;
+                background: #f1f1f1;
+            }
+        }
     }
-    #responsive-icon{
-        display: block;
-    }
+}
+
+@media screen and (min-width:1080px){
+    
+}
+@media screen and (min-width:768px){
 }

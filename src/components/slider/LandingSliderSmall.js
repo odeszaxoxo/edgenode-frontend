@@ -63,7 +63,7 @@ export class SliderComponent extends Component {
             ))}
             </div>
             </div>
-            <div className="arrows">
+            <div className="slider__arrows">
                 <LeftArrow 
                     goToPrevSlide={this.goToPrevSlide}
                 />

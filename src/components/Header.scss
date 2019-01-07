@@ -1,51 +1,59 @@
+@import '../variables.scss';
 .main-header{
     display: flex;
     justify-content: center;
     width: 100%;
-}
-.main-header__wrapper{
-    display: flex;
-    align-items: center;
-    width: 1500px;
-    opacity: 0.6;
-}
-.main-header__wrapper-logo{
-    height: 42px;
-    width: 144px;
-    margin-right: 37px;
-}
-.main-header__wrapper-button{
-    color: lightgray;
-    white-space: nowrap;
-    margin-left: 64px;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-}
-.main-header__wrapper-button-login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #2196F3;
-    border: 1px solid #2196F3;
-    height:40px ;
-    width: 127px;
-    border-radius: 21px;
-    margin-left: auto;
-    cursor: pointer;
-    text-decoration: none;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        width: calc(100% - 216px);
+        opacity: 0.6;
+        margin-left: 108px;
+        margin-right: 108px;
+        &-logo{
+            height: 42px;
+            width: 144px;
+            margin-right: 37px;
+        }
+        &-button{
+            color: lightgray;
+            white-space: nowrap;
+            margin-left: 64px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            &-login{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #2196F3;
+                border: 1px solid #2196F3;
+                height:40px ;
+                width: 127px;
+                border-radius: 21px;
+                margin-left: auto;
+                cursor: pointer;
+                text-decoration: none;
+                &:hover{
+                    font-weight: 600;
+                    border: 2px solid #2196F3;
+                }
+            }
+            &:hover{
+                font-weight: 600;
+                color: white;   
+            }
+        }
+    }
 }
 #responsive-icon{
     display: none;
 }
-@media screen and (max-width:1200px){
-    
-}
-@media screen and (max-width:992px){
+@media screen and (min-width:1080px){
     
 }
 @media screen and (max-width:768px){
-    .main-header-button-login{
+   .main-header-button-login{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -56,7 +64,5 @@
         cursor: pointer;
         font-size: 0;
     }
-    #responsive-icon{
-        display: block;
-    }
+    
 }

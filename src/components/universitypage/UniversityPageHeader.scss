@@ -10,25 +10,25 @@
         position: absolute;
         z-index: -1;  
     }
-}
-.university-header__content{
-    color: white;
-    margin-left: 104px;
-    width: 890px;
-}
-.university-header__title{
-    font-size: 64px;
-    font-weight: bold;
-    margin-top: 85px;
-}
-.university-header__text-title{
-    font-size: 36px;
-    font-weight: bold;
-    margin-top: 14px;
-    line-height: normal
-}
-.university-header__text{
-    font-size: 16px;
-    line-height: 23px;
-    margin-top: 40px;
+    &__content{
+        color: white;
+        margin-left: 104px;
+        width: 890px;
+    }
+    &__title{
+        font-size: 64px;
+        font-weight: bold;
+        margin-top: 85px;
+    }
+    &__text-title{
+        font-size: 36px;
+        font-weight: bold;
+        margin-top: 14px;
+        line-height: normal
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 23px;
+        margin-top: 40px;
+    }
 }

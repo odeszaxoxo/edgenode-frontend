@@ -40,7 +40,7 @@ export class InfoContainerComponent extends Component {
                     <h1 className="info-container__title">Часто задаваемые вопросы</h1>
                     <p className="info-container__text">В любом случае подготовка к поступлению требует ответа на следующие вопросы:</p>
                     <div className="info__list-container">
-                        <ul className="info__list">
+                        <ul className="info-container__list">
                             <li className="info__list-item">В каком городе я хочу учиться?</li>
                             <li className="info__list-item">Какая специальность наиболее близка к профессии моей мечты?</li>
                             <li className="info__list-item">Каковы мои успехи по профильным предметам?</li>

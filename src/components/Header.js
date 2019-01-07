@@ -17,7 +17,7 @@ export const HeaderComponent = () => {
                 <a className="main-header__wrapper-button">
                 <i className="material-icons">search</i>
                 </a>
-                <Link to="/main/auth" className="main-header__wrapper-button-login"><i className="material-icons" id="responsive-icon">exit_to_app</i>Войти</Link>
+                <Link to="/main/auth" className="main-header__wrapper-button-login">Войти</Link>
             </div>
         </div>
     );

@@ -1,84 +1,50 @@
-.footer {
+.footer{
     flex: 0 0 100px;
     background-color: #0b122a;
     padding: 40px;
     display: flex;
     justify-content: center;
+    &-wrapper{
+        display: flex;
+        width: calc(100% - 216px);
+        margin-left: 108px;
+        margin-right: 108px;
+        &__logo-container-image{
+            height: 42px;
+            width: 144px;
+            margin-right: 72px;
+            cursor: pointer;
+        }
+        &__links-container{
+            display: flex;
+            flex-direction: column;
+            margin-right: auto;
+            &-link{
+                color: lightgray;
+                line-height: 30px;
+                cursor: pointer;
+                white-space: nowrap;
+            }
+        }
+        &__contact-info-container{
+            display: flex;
+            flex-direction: column;   
+            color: lightgray;
+            margin-left: 32px;
+            &-title{
+                font-weight: bold;
+                
+            }
+            &-text{
+                line-height: 50px;  
+                white-space: nowrap;
+            }
+        }
+    }
 }
-.footer_wrapper__logo-container-image{
-    height: 42px;
-    width: 144px;
-    margin-right: 72px;
-    cursor: pointer;
-}
-.footer-wrapper__links-container{
-    display: flex;
-    flex-direction: column;
-    margin-right: auto;
-}
-.footer-wrapper__links-container-link{
-    color: lightgray;
-    line-height: 30px;
-    cursor: pointer;
-    white-space: nowrap;
-}
-.footer-wrapper__contact-info-container{
-    display: flex;
-    flex-direction: column;   
-    color: lightgray;
-    margin-left: 34px;
+@media screen and (min-width:1080px){
     
 }
-.footer-wrapper__contact-info-container-title{
-    font-weight: bold;
+@media screen and (min-width:768px){
     
-}
-.footer-wrapper__contact-info-container-text{
-    line-height: 50px;  
-    white-space: nowrap;
-}
-.footer-wrapper{
-    display: flex;
-    width: 972px;
-}
-@media screen and (max-width:1200px){
-    .footer-wrapper{
-        width: 1200px;
-        height: 100px;
-    }
-    
-}
-@media screen and (max-width:992px){
-    .footer-wrapper{
-        width: 970px;
-        height: 80px;
-    }
-    .contact-info-container-title{
-        font-size: 14px;
-    }
-    .contact-info-text{
-        font-size: 14px;
-        line-height: 35px;
-    }
-    .main-footer-link{
-        font-size: 14px;
-        line-height: 25px;
-    }
-}
-@media screen and (max-width:768px){
-    .footer-wrapper{
-        width: 750px;
-        height: 60px;
-    }
-    .contact-info-container-title{
-        font-size: 12px;
-    }
-    .contact-info-text{
-        font-size: 12px;
-        line-height: 30px;
-    }
-    .main-footer-link{
-        font-size: 12px;
-        line-height: 20px;
-    }
 }

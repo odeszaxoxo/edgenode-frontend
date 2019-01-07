@@ -9,16 +9,16 @@
     border-radius: 50%;
     cursor: pointer;
     transition: transform ease-in .1s;
-  }
-  .backArrow {
-    top: 28px;
-    left: 25px;
-    z-index: 999;
-    color: #fff;
-    background-color: $lightblue;
-    width: 57px;
-    height: 57px;
-  }
-  .arrow__icon{
-    font-size:58px;
+    &__back{
+        top: 28px;
+        left: 25px;
+        z-index: 999;
+        color: #fff;
+        background-color: $lightblue;
+        width: 57px;
+        height: 57px;
+    }
+    &__icon{
+      font-size:58px;
+    }
   }

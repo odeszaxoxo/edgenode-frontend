@@ -19,24 +19,93 @@
         justify-content: center;
         margin-top: 29px;
     }
-}
-.login-form__header{
-    flex: 0 0 108px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #E3F2FD   ;
-    
-    font-size: 36px;
-    font-weight: bold;
-}
-.login-form__container{
-    padding:42px;
-    flex: 1 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    &__header{
+        flex: 0 0 108px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #E3F2FD   ;
+        
+        font-size: 36px;
+        font-weight: bold;
+    }
+    &__container{
+        padding:42px;
+        flex: 1 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__textfield{
+        position: relative;
+        margin-bottom: 92px;
+        &:first-child{
+            margin-right: 30px;
+        }
+    }
+    &__input{
+        font-size: 20px;
+        
+        display: block;
+        width: 248px;
+        border:none;
+        border-bottom:1px solid #757575;
+        &:focus     { outline:none; }
+        &:focus ~ .login-form__input-label {
+            top: 35px;
+            font-size: 14px;
+            color: $lightblue;
+        }
+        &:focus {
+            &~ .login-form__input-bar{
+            &:before{width: 50%;}
+            &:after{width: 50%;}
+            }
+        }
+        &:focus ~ .login-form__input-highlight {
+            animation:inputHighlighter 0.3s ease;
+        }
+        &-label{
+            color: #999;
+            font-size: 20px;
+            font-weight: normal;
+            position: absolute;
+            pointer-events: none;
+            left: 5px;
+            top: 0;
+            transition: 0.2s ease all;
+        }
+        &-bar{
+            position:relative;
+            display: block;
+            width: 248px;
+            &:before, &:after{
+                content: '';
+                height: 2px;
+                width: 0;
+                bottom: 1px;
+                position: absolute;
+                background:#008cff;
+                transition: 0.2s ease all;
+            }
+            &:before{
+                left: 50%;
+            }
+            &:after{
+                right: 50%;
+            }
+        }
+        &-highlight{
+            position: absolute;
+            height: 60%;
+            width: 100px;
+            top: 25%;
+            left: 0;
+            pointer-events: none;
+            opacity: 0.5;
+        }
+    }
 }
 .login-button{
     width: 313px;
@@ -55,75 +124,6 @@
     &:active{
         transform: scale(0.95,0.95)
     }
-}
-.login-form__textfield{
-    position: relative;
-    margin-bottom: 92px;
-    &:first-child{
-        margin-right: 30px;
-    }
-}
-.login-form__input{
-    font-size: 20px;
-    
-    display: block;
-    width: 248px;
-    border:none;
-    border-bottom:1px solid #757575;
-    &:focus     { outline:none; }
-    &:focus ~ .login-form__input-label {
-        top: 35px;
-        font-size: 14px;
-        color: $lightblue;
-    }
-    &:focus {
-        &~ .login-form__input-bar{
-        &:before{width: 50%;}
-        &:after{width: 50%;}
-        }
-    }
-    &:focus ~ .login-form__input-highlight {
-        animation:inputHighlighter 0.3s ease;
-    }
-}
-.login-form__input-label{
-    color: #999;
-    font-size: 20px;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-    left: 5px;
-    top: 0;
-    transition: 0.2s ease all;
-}
-.login-form__input-bar{
-    position:relative;
-    display: block;
-    width: 248px;
-    &:before, &:after{
-        content: '';
-        height: 2px;
-        width: 0;
-        bottom: 1px;
-        position: absolute;
-        background:#008cff;
-        transition: 0.2s ease all;
-    }
-    &:before{
-        left: 50%;
-    }
-    &:after{
-        right: 50%;
-    }
-}
-.login-form__input-highlight{
-    position: absolute;
-    height: 60%;
-    width: 100px;
-    top: 25%;
-    left: 0;
-    pointer-events: none;
-    opacity: 0.5;
 }
 
 @keyframes inputHighlighter {
@@ -224,31 +224,9 @@
         }
 }
 
-@media screen and (max-width:1200px){
-    
+@media screen and (min-width:1080px){
     
 }
-@media screen and (max-width:992px){
-    .login-form__textfields{
-        display: flex;
-        flex-direction: column;
-    }
-    .login-form__textfield{
-        margin-bottom: 50px;
-    }
-    .login-form{
-        width: 443px;
-    }
-}
-@media screen and (max-width:768px){
-    .login-form__textfields{
-        display: flex;
-        flex-direction: column;
-    }
-    .login-form__textfield{
-        margin-bottom: 30px;
-    }
-    .login-form{
-        width: 343px;
-    }
+@media screen and (min-width:768px){
+    
 }

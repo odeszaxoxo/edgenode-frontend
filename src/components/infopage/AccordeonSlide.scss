@@ -1,28 +1,24 @@
-.accordeon-slide {
+.accordeon-slide{
     display: flex;
     flex-direction: column;
+    &__header{
+      height: 40px;
+      width: 100%;
+      border: none;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    &__body{
+      overflow: hidden;
+      height: 0;
+      width: 892px;
+      border: none;
+      transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      opacity: 0;
+      &_opened{
+        height: 200px;
+        opacity: 1;
+      }
+    }
   }
-  
-  .accordeon-slide__header {
-    height: 40px;
-    width: 100%;
-    border: none;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .accordeon-slide__body {
-    overflow: hidden;
-    height: 0;
-    width: 892px;
-    border: none;
-    transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-  }
-  
-  .accordeon-slide__body_opened {
-    height: 200px;
-    opacity: 1;
-  }
-  

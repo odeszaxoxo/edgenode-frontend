@@ -1,19 +1,19 @@
 .slider {
     position: relative;
     white-space: nowrap;
+    &__wrapper {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      display: flex;
+    }
+    &__container{
+      overflow: hidden;
+      width: 500px;
+    }
+    &__arrows{
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+    }
   }
-.slider__wrapper {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    display: flex;
-  }
-.slider__container{
-  overflow: hidden;
-  width: 500px;
-}
-.arrows{
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-}

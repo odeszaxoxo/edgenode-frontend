@@ -10,8 +10,8 @@ export const FooterComponent = ({match})=> {
     return (
         <div className="footer">
             <div className="footer-wrapper">
-                <div className="footer_wrapper__logo-container">
-                    <Link to="/main" className="main-footer__wrapper-button-login"><img className="footer_wrapper__logo-container-image" src={logo}/></Link>
+                <div className="footer-wrapper__logo-container">
+                    <Link to="/main" className="main-footer__wrapper-button-login"><img className="footer-wrapper__logo-container-image" src={logo}/></Link>
                 </div>
                 <div className="footer-wrapper__links-container">
                     <a className="footer-wrapper__links-container-link">О системе</a>
