@@ -4,8 +4,6 @@ import logo from '../assets/logo2.png';
 import {Link} from 'react-router-dom';
 
 export const FooterComponent = ({match})=> {
-
-    console.log(match);
     
     return (
         <div className="footer">

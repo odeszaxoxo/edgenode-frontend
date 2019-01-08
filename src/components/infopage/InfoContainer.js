@@ -50,6 +50,7 @@ export class InfoContainerComponent extends Component {
                             <li className="info__list-item">Каковы условия приема в подходящем вузе и список требуемых документов?</li>
                         </ul>
                     </div>
+                    <div className="info-container__accordion-line"><i className="material-icons accordion-icon">list</i></div>
                     <div className="info-container__accordion">
                     <Accordeon slides={slides}></Accordeon>
                     </div>
