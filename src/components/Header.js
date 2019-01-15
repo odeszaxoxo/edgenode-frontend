@@ -10,14 +10,14 @@ export const HeaderComponent = () => {
             <div className="main-header__wrapper">
                 <Link to="/main"><img className="main-header__wrapper-logo" src={logo} alt=""/></Link>
                
-                <Link to="/info" className="main-header__wrapper-button">О нас</Link>
-                <Link to="/info" className="main-header__wrapper-button">Проекты</Link>
-                <Link to="/info" className="main-header__wrapper-button">Регламент</Link>
-                <Link to="/info" className="main-header__wrapper-button">Партнеры</Link>
+                <Link to="/info" className="main-header__wrapper-button">About</Link>
+                <Link to="/info" className="main-header__wrapper-button">Projects</Link>
+                <Link to="/info" className="main-header__wrapper-button">Legal</Link>
+                <Link to="/info" className="main-header__wrapper-button">Partnership</Link>
                 <a className="main-header__wrapper-button">
                 <i className="material-icons">search</i>
                 </a>
-                <Link to="/main/auth" className="main-header__wrapper-button-login">Войти</Link>
+                <Link to="/main/auth" className="main-header__wrapper-button-login">Login</Link>
             </div>
         </div>
     );
