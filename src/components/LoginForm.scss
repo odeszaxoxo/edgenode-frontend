@@ -224,9 +224,46 @@
         }
 }
 
-@media screen and (min-width:1080px){
-    
+@media (max-width: 480px) {
+    .login-form{
+        width: 100%;
+        height: calc(100vh - 224px);
+        &__button{
+            width: 243px;
+            height: 53px;
+            font-size: 16px;
+        }
+        &__header{
+            flex: 0 0 50px;
+            font-size: 24px;
+        }
+        &__container{
+            padding: 0;
+        }
+        &__textfields{
+            flex-direction: column;
+            margin-top: auto;
+        }
+        &__links{
+            margin-bottom: auto;
+        }
+        &__textfield{
+            margin-bottom: 42px;
+            &:first-child{
+                margin-right: 0;
+            }
+        }
+    }
 }
-@media screen and (min-width:768px){
-    
+
+@media (min-width: 768px){
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1176px){
+
 }

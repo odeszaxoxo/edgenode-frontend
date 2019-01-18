@@ -43,9 +43,30 @@
         }
     }
 }
-@media screen and (min-width:1080px){
-    
+@media (max-width: 480px) {
+    .footer{
+        &-wrapper{
+            width: calc(100% - 10px);
+            margin-left: 0;
+            margin-right: 0;
+            &__links-container{
+                display: none;
+            }
+            &__contact-info-container{
+                display: none;
+            }
+        }
+    }
 }
-@media screen and (min-width:768px){
-    
+
+@media (min-width: 768px){
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1176px){
+
 }

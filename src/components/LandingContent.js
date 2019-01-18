@@ -35,7 +35,6 @@ the researcher and you are the contributor.</p>
                         <p className="landing-content__block-text">We base our search system on primary source data and deep comparative analysis.</p>
                     </div>
                 </div>
-            <h1 className="landing-content__container-title-middle"></h1>
                 <div className="landing-content__slider">
                     <BigSliderComponent></BigSliderComponent>
                 </div>    
@@ -94,8 +93,8 @@ individually.</div>
                     </div>
                 </div>
                 <div className="landing-footer__registration">
-                    <h1 className="landing-footer__text">Ready to join in?</h1>
-                    <Link to="/main/registration" className="login-form__link"><button className="landing-footer__registration-button">Зарегистрироваться</button></Link>
+                    <h1 className="landing-footer__text">Ready to join in      ?</h1>
+                    <Link to="/main/registration" className="login-form__link"><button className="landing-footer__registration-button">Register</button></Link>
                 </div>
         </div>
     );

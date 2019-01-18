@@ -67,8 +67,8 @@ export class RegistrationComponent extends Component {
                                     </div>
                                 </div>
                                 <div className="registration__textfields-layer">
-                                    <div className='registration__textfield_fullname'>
-                                        <input  className="registration-form__input_fullname" type="text" value={this.state.userFullName} onChange={this.userFullNameChangeHandler} autoComplete="off"></input>
+                                    <div className='registration__textfield-fullname'>
+                                        <input  className="registration-form__input-fullname" type="text" value={this.state.userFullName} onChange={this.userFullNameChangeHandler} autoComplete="off"></input>
                                         <span className="registration-form__input-highlight"></span>
                                         <span className="registration-form__input-bar"></span>
                                         <label className={(this.state.userFullName.length===0 ? "registration-form__input-label": "registration-form__input-label registration-form__input-label_active")}>Полное имя</label>

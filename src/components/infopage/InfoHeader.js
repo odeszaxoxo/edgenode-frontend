@@ -10,14 +10,14 @@ export const InfoHeaderComponent = () => {
             <div className="info-header__wrapper">
                 <Link to="/main"><img className="info-header__wrapper-logo" src={logoDark} alt=""/></Link>
                
-                <Link to="/info" className="info-header__wrapper-button">О нас</Link>
-                <Link to="/info" className="info-header__wrapper-button">Проекты</Link>
-                <Link to="/info" className="info-header__wrapper-button">Регламент</Link>
-                <Link to="/info" className="info-header__wrapper-button">Партнеры</Link>
+                <Link to="/info" className="info-header__wrapper-button">About</Link>
+                <Link to="/info" className="info-header__wrapper-button">Projects</Link>
+                <Link to="/info" className="info-header__wrapper-button">Legal</Link>
+                <Link to="/info" className="info-header__wrapper-button">Partnerships</Link>
                 <a className="info-header__wrapper-button">
                 <i className="material-icons">search</i>
                 </a>
-                <Link to="/main/auth" className="info-header__wrapper-button-login"><i className="material-icons" id="responsive-icon">exit_to_app</i>Войти</Link>
+                <Link to="/main/auth" className="info-header__wrapper-button-login"><i className="material-icons" id="responsive-icon">exit_to_app</i>Login</Link>
             </div>
         </div>
     );

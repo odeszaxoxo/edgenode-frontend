@@ -62,6 +62,7 @@
     left: 5px;
     top: 0;
     border-style: none;
+    transition: 0.2s ease all;
 }
 .registration-form__input-bar{
     position:relative;
@@ -103,7 +104,7 @@
     display:flex;
     justify-content: center; 
 }   
-.registration-form__input_fullname{
+.registration-form__input-fullname{
     font-size: 20px;
     display: block;
     width: 532px;
@@ -126,7 +127,7 @@
         animation:inputHighlighter 0.3s ease;
     }
 }
-.registration__textfield_fullname{
+.registration__textfield-fullname{
     position: relative;
     margin-bottom: 64px;
     &:first-child{
@@ -146,7 +147,7 @@
         border-radius: 49px;
         padding: 0 16px;
         width: 313px;
-        min-height: 63px;
+        height: 63px;
         vertical-align: middle;
         text-align: center;
         text-overflow: ellipsis;
@@ -375,36 +376,100 @@
     font-size: 12px;
 }
 
- 
-
-
-
-
-@media screen and (max-width:1200px){
-    
-    
-}
-@media screen and (max-width:992px){
-    .textfields{
-        display: flex;
-        flex-direction: column;
-    }
-    .registration-textfield{
-        margin-bottom: 50px;
-    }
+@media (max-width: 480px) {
     .registration-form{
-        width: 443px;
+        width: 100%;
+
+        &__container{
+            padding: 0;
+        }
+        &__header{
+            flex: 0 0 54px;
+            font-size: 26px;
+        }
+        &__input{
+            width: 300px;
+            &-highlight{
+
+            }
+            &-bar{
+                width: 300px;
+            }
+            &-label{
+                font-size: 16px;
+                &_active{
+                    font-size: 12px;
+                }
+            }
+            &-fullname{
+                width: 300px;
+                &:focus {
+                    &~ .registration-form__input-bar{
+                    width: 300px;
+                    }
+                }
+            }
+        }
+        &__select{
+            width: 300px;
+            &-label{
+                font-size: 16px;
+                &_active{
+                    font-size: 12px;
+                }
+            }
+            &-bar{
+                width: 300px;
+            }
+        }
+        &__checkbox{   
+            &-label{
+                font-size: 11px;
+            }
+        }
+    }
+    .registration{
+        &__textfields{
+            margin-top: auto;
+            &-select{
+                width: 300px;
+            }
+            &-layer{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &__button{
+            width: 243px;
+            height: 53px;
+            font-size: 16px;
+            &-container{
+                margin-bottom: auto;
+            }
+        }
+        &__textfield{
+            &:first-child{
+                margin-right: 0;
+            }
+            margin-bottom: 32px;
+            &-fullname{
+                margin-bottom: 32px;
+            }
+        }
+        &__checkbox{
+            margin-top: 32px;
+        }
     }
 }
-@media screen and (max-width:768px){
-    .textfields{
-        display: flex;
-        flex-direction: column;
-    }
-    .registration-textfield{
-        margin-bottom: 30px;
-    }
-    .registration-form{
-        width: 343px;
-    }
+
+@media (min-width: 768px){
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1176px){
+
 }
