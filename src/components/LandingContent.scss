@@ -213,9 +213,57 @@
     height: 523px;
     margin-top: 40px;
 }
-@media screen and (min-width:1080px){
-    
+
+@media (max-width: 480px) {
+    .main-landing{
+        padding-top: 40px;
+    }
+    .landing-content{
+        &__container{
+            flex-direction: column;
+            &-title{
+                padding-left: 10px;
+            }
+        }
+        &__block{
+            width: 100%;
+            margin-top: 10px;
+            &-text{
+                line-height: 20px;
+                font-size: 15px;
+            }
+        }
+        &__info{
+            margin-bottom: 20px;
+        }
+    }
+    .landing-image{
+        &__container{
+            flex-direction: column;
+            padding: 10px;
+        }
+        &__image-wrapper{
+            display: none;
+        }
+        &__line-wrapper{
+            display: none;
+        }
+    }
+    .landing-footer{
+        &__registration{
+            display: none;
+        }
+    }
 }
-@media screen and (min-width:768px){
-    
+
+@media (min-width: 768px){
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1176px){
+
 }

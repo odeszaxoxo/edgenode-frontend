@@ -45,15 +45,21 @@
 }
 @media (max-width: 480px) {
     .footer{
+        
         &-wrapper{
             width: calc(100% - 10px);
             margin-left: 0;
             margin-right: 0;
+            align-items: center;
+            justify-content: center;
             &__links-container{
                 display: none;
             }
             &__contact-info-container{
                 display: none;
+            }
+            &__logo-container-image{
+                margin-right: 0;
             }
         }
     }
