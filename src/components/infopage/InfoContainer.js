@@ -8,22 +8,22 @@ const slides = [
     {
       id:"1",
       isOpened: false,
-      content: 'Часть старшеклассников принимает решение покинуть школьные стены сразу после 9 ласса, но ошибочно думать, что путь в высшие учебные заведения для «ранних» абитуриентов заказан. Молодые люди, не отучившиеся в 10-м и 11-м классах, также имеют возможность впоследствии получить заветное ВО – через колледж. Более того, при обучении по системе «колледж-вуз» на базе 9 классов абитуриенты могут поступить на программы высшего образования без необходимости сдавать ЕГЭ – при условии выбора аналогичной специальности. Зная об этом, некоторые старшеклассники предпочитают не тратить время на получение школьных знаний по «ненужным» предметам и покидают учебное заведение общего образовани  при первой возможности, чтобы начать приобретать профессиональные навыки. Этот способ получить высшее образование подходит молодым людям, раньше сверстников определившихся со своей будущей профессией.'
+      content: 'Info'
     },
     {
       id:"2",
       isOpened: false,
-      content: 'Часть старшеклассников принимает решение покинуть школьные стены сразу после 9 ласса, но ошибочно думать, что путь в высшие учебные заведения для «ранних» абитуриентов заказан. Молодые люди, не отучившиеся в 10-м и 11-м классах, также имеют возможность впоследствии получить заветное ВО – через колледж. Более того, при обучении по системе «колледж-вуз» на базе 9 классов абитуриенты могут поступить на программы высшего образования без необходимости сдавать ЕГЭ – при условии выбора аналогичной специальности. Зная об этом, некоторые старшеклассники предпочитают не тратить время на получение школьных знаний по «ненужным» предметам и покидают учебное заведение общего образовани  при первой возможности, чтобы начать приобретать профессиональные навыки. Этот способ получить высшее образование подходит молодым людям, раньше сверстников определившихся со своей будущей профессией.'
+      content: 'Info'
     },
     {
       id:"3",
       isOpened: false,
-      content: 'Часть старшеклассников принимает решение покинуть школьные стены сразу после 9 ласса, но ошибочно думать, что путь в высшие учебные заведения для «ранних» абитуриентов заказан. Молодые люди, не отучившиеся в 10-м и 11-м классах, также имеют возможность впоследствии получить заветное ВО – через колледж. Более того, при обучении по системе «колледж-вуз» на базе 9 классов абитуриенты могут поступить на программы высшего образования без необходимости сдавать ЕГЭ – при условии выбора аналогичной специальности. Зная об этом, некоторые старшеклассники предпочитают не тратить время на получение школьных знаний по «ненужным» предметам и покидают учебное заведение общего образовани  при первой возможности, чтобы начать приобретать профессиональные навыки. Этот способ получить высшее образование подходит молодым людям, раньше сверстников определившихся со своей будущей профессией.'
+      content: 'Info'
     },
     {
       id:"4",
       isOpened: false,
-      content: 'Часть старшеклассников принимает решение покинуть школьные стены сразу после 9 ласса, но ошибочно думать, что путь в высшие учебные заведения для «ранних» абитуриентов заказан. Молодые люди, не отучившиеся в 10-м и 11-м классах, также имеют возможность впоследствии получить заветное ВО – через колледж. Более того, при обучении по системе «колледж-вуз» на базе 9 классов абитуриенты могут поступить на программы высшего образования без необходимости сдавать ЕГЭ – при условии выбора аналогичной специальности. Зная об этом, некоторые старшеклассники предпочитают не тратить время на получение школьных знаний по «ненужным» предметам и покидают учебное заведение общего образовани  при первой возможности, чтобы начать приобретать профессиональные навыки. Этот способ получить высшее образование подходит молодым людям, раньше сверстников определившихся со своей будущей профессией.'
+      content: 'Info'
     }
   ];
 
@@ -37,17 +37,29 @@ export class InfoContainerComponent extends Component {
                     <InfoHeaderComponent></InfoHeaderComponent>
                 </div>
                 <div className="info-container__content-form">
-                    <h1 className="info-container__title">Часто задаваемые вопросы</h1>
-                    <p className="info-container__text">В любом случае подготовка к поступлению требует ответа на следующие вопросы:</p>
+                    <h1 className="info-container__title">About</h1>
                     <div className="info__list-container">
                         <ul className="info-container__list">
-                            <li className="info__list-item">В каком городе я хочу учиться?</li>
-                            <li className="info__list-item">Какая специальность наиболее близка к профессии моей мечты?</li>
-                            <li className="info__list-item">Каковы мои успехи по профильным предметам?</li>
-                            <li className="info__list-item">Готов ли я пройти через колледж или хочу сразу поступить на программу ВО?</li>
-                            <li className="info__list-item">В каком формате я планирую получать образование?</li>
-                            <li className="info__list-item">Какой вуз предлагает обучение по необходимой мне программе?</li>
-                            <li className="info__list-item">Каковы условия приема в подходящем вузе и список требуемых документов?</li>
+                            <h1 className="info-container__list-text">Who we are?</h1>
+                            <li className="info__list-item">EdgeNode is a multidisciplinary collective of researchers, entrepreneurs and developers, aimed at solving modern
+challenges within the global educational setting. We position ourselves as those, who use the latest achievements
+in technology and fundamental science to improve conditions for personal intellectual development.</li>
+                            <li className="info__list-item">Our team has gathered around the idea of creating a search system, which would function as both an optimization tool
+for personal development and as a bank for intellectual capital. Global education has become so diverse and at the
+same time mutually dependant, that it became almost impossible for one person to get an adequate picture of itself
+in the international academic setting, without sacrificing time that could be spent on actual learning and training.</li>
+                            <li className="info__list-item">Users are our key suppliers of ideas on how to make our algorithms faster and more reliable. We do our best to collect
+raw data from first sources and to associate with highly ranked institutions and experts, working in the areas of 
+sociology, education, economics, neural networks and discrete mathematics.</li>
+                            <h1 className="info-container__list-text">How we work?</h1>
+                            <li className="info__list-item">Due to our necessity to constantly collect data and make it part of our databases, we try to approach every user
+independantly. Once there is an academic achievement that you find is important to add to your profile, you can
+describe it independantly from the standard forms. By doing so, you not only get a better picture of your trajectories,
+but you also help EdgeNode to become more reliable.</li>
+                            <li className="info__list-item">Due to our necessity to constantly collect data and make it part of our databases, we try to approach every user
+independantly. Once there is an academic achievement that you find is important to add to your profile, you can
+describe it independantly from the standard forms. By doing so, you not only get a better picture of your trajectories,
+but you also help EdgeNode to become more reliable.</li>
                         </ul>
                     </div>
                     <div className="info-container__accordion-line"><i className="material-icons accordion-icon">list</i></div>

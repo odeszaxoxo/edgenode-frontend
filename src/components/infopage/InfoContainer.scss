@@ -46,8 +46,57 @@
         font-size: 20px;
         list-style-type: disc;
         margin-left: 22px;
+        margin-top: 52px;
+        &-text{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     }
 }
 .material-icons.accordion-icon{
     margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+    .info-container{
+        &__content-form{
+            margin-left: 5px;
+        }
+        &__title{
+            font-size: 46px;
+            margin-top: 5px;
+            margin-left: 16px;
+        }
+        &__text{
+            margin-top: 52px;
+            font-size: 16px;
+        }
+        &__list{
+            font-size: 16px;
+            line-height: 25px;
+            margin-right: 5px;
+            margin-left: 16px;
+        }
+        &__accordion{
+            width: 100%;
+            &-line{
+                width: calc(100% - 10px);
+            }
+        }
+        &__footer{
+            margin-top: -120px;
+        }
+    }
+}
+
+@media (min-width: 768px){
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1176px){
+
 }

@@ -48,8 +48,52 @@
     }
 }
 
-@media screen and (min-width:1080px){
-    
+@media (max-width: 480px) {
+    .info-header{
+        &__wrapper{
+            width: calc(100% - 10px);
+            margin-left: 5px;
+            margin-right: 5px;
+            justify-content: space-between;
+            &-logo{
+                margin-right: 0;
+            }
+            &-button-login{
+                border: none;
+                height: 100px;
+                width: 24px;
+                margin-left: 0;
+                width: 40px;
+                &:hover{
+                    border:none;
+                }
+            }
+            &-button{
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                margin-left: 0;
+            }
+        }
+        &__links{
+            display: none;
+        }
+        &__button-text{
+            display: none;
+        }
+    }
 }
-@media screen and (min-width:768px){
+
+@media (min-width: 768px){
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1176px){
+
 }
