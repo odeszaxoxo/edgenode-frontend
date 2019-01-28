@@ -15,10 +15,10 @@ export const InfoHeaderComponent = () => {
                     <Link to="/info" className="info-header__wrapper-button">Legal</Link>
                     <Link to="/info" className="info-header__wrapper-button">Partnerships</Link>
                 </div>
-                <a className="info-header__wrapper-button">
+                <Link to="/info" className="info-header__wrapper-button">
                 <i className="material-icons">search</i>
-                </a>
-                <Link to="/main/auth" className="info-header__wrapper-button-login"><i className="material-icons" id="responsive-icon">exit_to_app</i><span className="info-header__button-text">Login</span></Link>
+                </Link>
+                <Link to="/main/auth" className="info-header__wrapper-button-login"><i className="material-icons info-login">exit_to_app</i><span className="info-header__button-text">Login</span></Link>
             </div>
         </div>
     );

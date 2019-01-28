@@ -49,7 +49,7 @@ export class RegistrationComponent extends Component {
     
             return (
                     <div className="registration-form">
-                        <div className="registration-form__header">Регистрация</div>
+                        <div className="registration-form__header">Sign up</div>
                         <div className="registration-form__container">
                             <div className="registration__textfields">
                                 <div className="registration__textfields-layer">
@@ -57,13 +57,13 @@ export class RegistrationComponent extends Component {
                                         <input className="registration-form__input" type="text" value={this.state.userName} onChange={this.userNameChangeHandler} autoComplete="off"></input>
                                         <span className="registration-form__input-highlight"></span>
                                         <span className="registration-form__input-bar"></span>
-                                        <label className={(this.state.userName.length===0 ? "registration-form__input-label": "registration-form__input-label registration-form__input-label_active")}>Имя пользователя</label>
+                                        <label className={(this.state.userName.length===0 ? "registration-form__input-label": "registration-form__input-label registration-form__input-label_active")}>User Name</label>
                                     </div>
                                     <div className='registration__textfield'>
                                         <input className="registration-form__input" type="email" value={this.state.userEmail} onChange={this.userEmailChangeHandler} autoComplete="off"></input>
                                         <span className="registration-form__input-highlight"></span>
                                         <span className="registration-form__input-bar"></span>
-                                        <label className={(this.state.userEmail.length===0 ? "registration-form__input-label": "registration-form__input-label registration-form__input-label_active")}>Электронная почта</label>
+                                        <label className={(this.state.userEmail.length===0 ? "registration-form__input-label": "registration-form__input-label registration-form__input-label_active")}>Email</label>
                                     </div>
                                 </div>
                                 <div className="registration__textfields-layer">
@@ -71,7 +71,7 @@ export class RegistrationComponent extends Component {
                                         <input  className="registration-form__input-fullname" type="text" value={this.state.userFullName} onChange={this.userFullNameChangeHandler} autoComplete="off"></input>
                                         <span className="registration-form__input-highlight"></span>
                                         <span className="registration-form__input-bar"></span>
-                                        <label className={(this.state.userFullName.length===0 ? "registration-form__input-label": "registration-form__input-label registration-form__input-label_active")}>Полное имя</label>
+                                        <label className={(this.state.userFullName.length===0 ? "registration-form__input-label": "registration-form__input-label registration-form__input-label_active")}>Full Name</label>
                                     </div>
                                 </div>
                                 <div className="registration__textfields-layer">
@@ -79,13 +79,13 @@ export class RegistrationComponent extends Component {
                                         <input className="registration-form__input" type="password" value={this.state.userPassword} onChange={this.userPasswordChangeHandler} autoComplete="off"></input>
                                         <span className="registration-form__input-highlight"></span>
                                         <span className="registration-form__input-bar"></span>
-                                        <label className={(this.state.userPassword.length===0 ? "registration-form__input-label": "registration-form__input-label registration-form__input-label_active")}>Пароль</label>
+                                        <label className={(this.state.userPassword.length===0 ? "registration-form__input-label": "registration-form__input-label registration-form__input-label_active")}>Password</label>
                                     </div>
                                     <div className='registration__textfield'>
                                         <input className="registration-form__input" type="password" value={this.state.userConfirmationPassword} onChange={this.userConfirmationPasswordChangeHandler} autoComplete="off"></input>
                                         <span className="registration-form__input-highlight"></span>
                                         <span className="registration-form__input-bar"></span>
-                                        <label className={(this.state.userConfirmationPassword.length===0 ? "registration-form__input-label": "registration-form__input-label registration-form__input-label_active")}>Подтвердите пароль</label>
+                                        <label className={(this.state.userConfirmationPassword.length===0 ? "registration-form__input-label": "registration-form__input-label registration-form__input-label_active")}>Confirm password</label>
                                     </div>
                                 </div> 
                                 <div className="registration__textfields-layer">
@@ -93,29 +93,29 @@ export class RegistrationComponent extends Component {
                                         <input className="registration-form__input" type="tel" value={this.state.userPhoneNumber} onChange={this.userPhoneNumberChangeHandler} autoComplete="off"></input>
                                         <span className="registration-form__input-highlight"></span>
                                         <span className="registration-form__input-bar"></span>
-                                        <label className={(this.state.userPhoneNumber.length===0 ? "registration-form__input-label": "registration-form__input-label registration-form__input-label_active")}>Номер телефона</label>
+                                        <label className={(this.state.userPhoneNumber.length===0 ? "registration-form__input-label": "registration-form__input-label registration-form__input-label_active")}>Phone number</label>
                                     </div>
                                     <div className="registration__textfields-select">
                                         <select className="registration-form__select" value={this.state.userCity} onChange={this.userCityChangeHandler}>
                                         <option defaultValue="" ></option>
-                                        <option value="1">Москва</option>
-                                        <option value="2">Санкт-Петербург</option>
-                                        <option value="3">Саратов</option>
+                                        <option value="1">Moscow</option>
+                                        <option value="2">St.Petersburg</option>
+                                        <option value="3">Saratov</option>
                                         </select>
                                         <span className="registration-form__select-highlight"></span>
                                         <span className="registration-form__select-bar"></span>
-                                        <label className={(this.state.userCity.length===0 ? "registration-form__select-label": "registration-form__select-label registration-form__select-label_active")}>Город проживания</label>
+                                        <label className={(this.state.userCity.length===0 ? "registration-form__select-label": "registration-form__select-label registration-form__select-label_active")}>City</label>
                                     </div>
                                 </div> 
                                 <div className="registration__textfields-layer">
                                     <div className="registration__checkbox">
                                         <input className="registration-form__checkbox" type="checkbox" id='q' onChange={this.userRightsChangeHandler} checked={this.userRights}/>
-                                        <label className="registration-form__checkbox-label" htmlFor="q">Я согласен/согласна с <Link to="main/rules" className="registration-form__link">политикой конфиденциальности.</Link></label>
+                                        <label className="registration-form__checkbox-label" htmlFor="q">I agree to the <Link to="main/rules" className="registration-form__link">privacy policy.</Link></label>
                                     </div>
                                 </div>
                             </div>
                             <div className="registration__button-container">
-                            <button className="registration__button" onClick={this.submitForm}>Зарегистрироваться</button>
+                            <button className="registration__button" onClick={this.submitForm}>SIGN UP</button>
                             </div>
                             
                         </div>

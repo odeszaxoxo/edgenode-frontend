@@ -18,19 +18,19 @@ export const LandingContentComponent = () => {
             <h1 className="landing-content__container-title">What problems are we solving?</h1>
                 <div className="landing-content__container">
                     <div className="landing-content__block">
-                        <img src={img1} className="landing-content__block-image"></img>
+                        <img src={img1} alt="" className="landing-content__block-image"></img>
                         <h2 className="landing-content__block-title">We save your time.</h2>
                         <p className="landing-content__block-text">Instead of spending weeks researching education systems and opportunities around
 the world, just use our adaptive search engines and get the information in minutes.</p>
                     </div>
                     <div className="landing-content__block">
-                        <img src={img2} className="landing-content__block-image"></img>
+                        <img src={img2} alt="" className="landing-content__block-image"></img>
                         <h2 className="landing-content__block-title">We save your money.</h2>
                         <p className="landing-content__block-text">We do not make money on individual cases like consulting firms. With us, you are
 the researcher and you are the contributor.</p>
                     </div>
                     <div className="landing-content__block">
-                        <img src={img3} className="landing-content__block-image"></img>
+                        <img src={img3} alt="" className="landing-content__block-image"></img>
                         <h2 className="landing-content__block-title">We give you confidence.</h2>
                         <p className="landing-content__block-text">We base our search system on primary source data and deep comparative analysis.</p>
                     </div>
@@ -43,7 +43,7 @@ the researcher and you are the contributor.</p>
                     <div className="landing-image__container">
                         <div className="landing-image__wrapper">
                             <div className="landing-image__image-wrapper">
-                                <img src={img4} className="landing-image__image" />
+                                <img src={img4} alt="" className="landing-image__image" />
                             </div>
                             <div className="landing-image__text">
                                 <div className="landing-image__text-title">Step 1</div>
@@ -55,7 +55,7 @@ the researcher and you are the contributor.</p>
                         </div>
                         <div className="landing-image__wrapper">
                             <div className="landing-image__image-wrapper">
-                                <img src={img5} className="landing-image__image" />
+                                <img src={img5} alt="" className="landing-image__image" />
                             </div>
                             <div className="landing-image__text">
                                 <div className="landing-image__text-title">Step 2</div>
@@ -69,7 +69,7 @@ it into account.</div>
                         </div>
                         <div className="landing-image__wrapper">
                             <div className="landing-image__image-wrapper">
-                                <img src={img6} className="landing-image__image" />
+                                <img src={img6} alt="" className="landing-image__image" />
                             </div>
                             <div className="landing-image__text">
                                 <div className="landing-image__text-title">Step 3</div>
@@ -82,7 +82,7 @@ you right now.</div>
                         </div>
                         <div className="landing-image__wrapper">
                             <div className="landing-image__image-wrapper">
-                                <img src={img7} className="landing-image__image" />
+                                <img src={img7} alt="" className="landing-image__image" />
                             </div>
                             <div className="landing-image__text">
                                 <div className="landing-image__text-title">Step 4</div>

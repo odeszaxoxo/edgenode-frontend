@@ -47,6 +47,11 @@
         }
     }
 }
+.material-icons{
+    &.info-login{
+        display: none;
+    }
+}
 
 @media (max-width: 480px) {
     .info-header{
@@ -82,6 +87,11 @@
         }
         &__button-text{
             display: none;
+        }
+    }
+    .material-icons{
+        &.info-login{
+            display: block;
         }
     }
 }
