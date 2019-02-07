@@ -1,0 +1,38 @@
+@import '../../variables';
+.result-window{
+    width: calc(100% - 400px);
+    height: 100%;
+    &__table{
+        width: 100%;
+        &-header{
+            background-color: $lightblue;
+            color: white;
+            height: 50px;
+            line-height: 50px;
+            border-style: solid;
+            border-width: 0px 1px;
+            border-color: black;
+            border-collapse: collapse; 
+        }
+        &-close{
+            background-color: $lightblue;
+            color: white;
+            height: 50px;
+            line-height: 50px;
+        }  
+        &-cell{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-style: solid;
+            border-width: 0px 1px;
+            border-color: black;
+            border-collapse: collapse; 
+        }
+        &-margin{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }      
+    }
+}

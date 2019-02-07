@@ -96,7 +96,7 @@
 @keyframes inputHighlighter {
     from  { background: #008cff; }
     to    { width:0; background:transparent; }
-  }
+}
 .registration__textfields{
     flex-direction: column;
 } 
@@ -318,7 +318,7 @@
 .registration-form__checkbox{
     position: absolute; 
     opacity: 0; 
-         & + .registration-form__checkbox-label {
+        & + .registration-form__checkbox-label {
           position: relative;
           cursor: pointer;
           padding: 0;

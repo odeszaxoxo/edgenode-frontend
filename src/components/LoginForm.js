@@ -21,7 +21,7 @@ export class LoginFormComponent extends Component {
   }
 
   submitForm() {
-    console.log(this.state);
+    console.log(JSON.stringify(this.state));
   }
     
     render() {

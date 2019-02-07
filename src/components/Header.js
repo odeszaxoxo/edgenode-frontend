@@ -17,7 +17,7 @@ export const HeaderComponent = () => {
                     <Link to="/info" className="main-header__wrapper-button">Legal</Link>
                     <Link to="/info" className="main-header__wrapper-button">Partnerships</Link>
                 </div>
-                <Link to="/info" className="main-header__wrapper-button"><i className="material-icons search-icon">search</i></Link>
+                <Link to="/search" className="main-header__wrapper-button"><i className="material-icons search-icon">search</i></Link>
                 <Link to="/main/auth" className="main-header__wrapper-button-login"><i className="material-icons login-icon">exit_to_app</i><span className="main-header__login-text">Login</span></Link>
             </div>
         </div>

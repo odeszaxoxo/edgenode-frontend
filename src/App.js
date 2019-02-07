@@ -3,6 +3,7 @@ import './App.css';
 import {ContainerComponent} from './components/Container'
 import {Route, Redirect, Switch} from 'react-router-dom';
 import {InfoContainerComponent} from './components/infopage/InfoContainer';
+import {SearchComponent} from './containers/Search/Search'
 
 
 
@@ -30,6 +31,7 @@ class App extends Component {
             <Route path='/main' component={ContainerComponent}/>
           </Switch>
             <Route path='/info' component={InfoContainerComponent}/>
+            <Route path='/search' component={SearchComponent}/>
       </div>
     );
   }

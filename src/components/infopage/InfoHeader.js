@@ -15,7 +15,7 @@ export const InfoHeaderComponent = () => {
                     <Link to="/info" className="info-header__wrapper-button">Legal</Link>
                     <Link to="/info" className="info-header__wrapper-button">Partnerships</Link>
                 </div>
-                <Link to="/info" className="info-header__wrapper-button">
+                <Link to="/search" className="info-header__wrapper-button">
                 <i className="material-icons">search</i>
                 </Link>
                 <Link to="/main/auth" className="info-header__wrapper-button-login"><i className="material-icons info-login">exit_to_app</i><span className="info-header__button-text">Login</span></Link>
