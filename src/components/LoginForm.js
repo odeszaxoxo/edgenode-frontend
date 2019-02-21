@@ -45,7 +45,7 @@ export class LoginFormComponent extends Component {
                             </div>
                         </div>
                     
-                        <button className="login-form__button" onClick={this.submitForm}>SIGN IN</button>
+                        <Link to="/profile"><button className="login-form__button" onClick={this.submitForm}>SIGN IN</button></Link>
                         <div className="login-form__links">
                             <Link to="/main/recovery" className="login-form__link">Forgot password?</Link>
                             <Link to="/main/registration" className="login-form__link">Create new account</Link>
