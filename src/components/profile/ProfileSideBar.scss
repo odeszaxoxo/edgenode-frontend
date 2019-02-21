@@ -1,0 +1,50 @@
+@import '../../variables';
+.sidebar-form{
+    width: 300px;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    &__image{
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-placeholder{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+    }
+    &__button{
+        width: 100%;
+        background-color: $lightblue;
+        color: white;
+        border-style: solid;
+        border-width: 1px 0px 1px 0px;
+        border-color: white;
+        border-collapse: collapse;
+        height: 50px;
+        &-container{
+            display: flex;
+            flex-direction: column;
+        }
+        &:hover{
+            opacity: 0.9;
+            cursor: pointer;
+        }
+    }
+    &__logout{
+        height: 50px;
+        &-button{
+            border: none;
+            background-color: transparent;
+            width: 100%;
+            &:hover{
+                opacity: 0.5;
+                cursor: pointer;
+            }
+        }
+    }
+}

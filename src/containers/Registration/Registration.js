@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Registration.scss';
 import {FooterComponent} from '../../components/Footer';
-import {ContainerComponent} from '../../components/Container';
 import {HeaderComponent} from '../../components/Header'
 import {RegistrationComponent} from '../../components/RegistrationForm'
 

@@ -1,0 +1,21 @@
+@import '../../variables';
+.qualifications-page{
+    width: 80%;
+    margin-left: 10px;
+    &__button{
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        &:hover{
+            opacity: 0.7;
+        }
+        padding: 0;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+.material-icons.add-button-main{
+    font-size: 46px;
+    color: $lightblue;
+}
