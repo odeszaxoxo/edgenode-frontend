@@ -49,7 +49,7 @@ export class RegistrationComponent extends Component {
     
             return (
                     <div className="registration-form">
-                        <div className="registration-form__header">Sign up</div>
+                        <div className="registration-form__header">Let's get started</div>
                         <div className="registration-form__container">
                             <div className="registration__textfields">
                                 <div className="registration__textfields-layer">
@@ -115,7 +115,7 @@ export class RegistrationComponent extends Component {
                                 </div>
                             </div>
                             <div className="registration__button-container">
-                            <button className="registration__button" onClick={this.submitForm}>SIGN UP</button>
+                            <button className="registration__button" onClick={this.submitForm}>REGISTER</button>
                             </div>
                             
                         </div>

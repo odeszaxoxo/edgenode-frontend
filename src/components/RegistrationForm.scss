@@ -13,9 +13,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #E3F2FD   ;
+    background-color: $lightblue   ;
     font-size: 36px;
     font-weight: bold;
+    color: white;
 }
 .registration-form__container{
     padding:42px;
@@ -146,8 +147,8 @@
         border: none;
         border-radius: 49px;
         padding: 0 16px;
-        width: 313px;
-        height: 63px;
+        width: 213px;
+        height: 43px;
         vertical-align: middle;
         text-align: center;
         text-overflow: ellipsis;

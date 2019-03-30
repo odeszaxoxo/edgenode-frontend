@@ -7,7 +7,7 @@
         display: flex;
         align-items: center;
         width: calc(100% - 216px);
-        opacity: 0.6;
+        opacity: 1;
         margin-left: 108px;
         margin-right: 108px;
         &-logo{
@@ -22,22 +22,44 @@
             cursor: pointer;
             font-size: 16px;
             text-decoration: none;
-            &-login{
+            &-login, &-register{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: #2196F3;
-                border: 1px solid #2196F3;
+                color: white;
+                border: 1px solid white;
                 height:40px ;
                 width: 127px;
                 border-radius: 21px;
-                margin-left: auto;
                 cursor: pointer;
                 text-decoration: none;
                 &:hover{
                     font-weight: 600;
-                    border: 2px solid #2196F3;
+                    border: 2px solid white;
                 }
+            }
+            &-search{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                background-color: $lightblue;
+                height:40px ;
+                width: 127px;
+                margin-left: 60px;
+                border-radius: 21px;
+                cursor: pointer;
+                text-decoration: none;
+                &:hover{
+                    font-weight: 600;
+                    border: 2px solid white;
+                }
+            }
+            &-login{
+                margin-left: auto;
+            }
+            &-register{
+                margin-left: 20px;
             }
             &:hover{
                 font-weight: 600;
@@ -86,6 +108,9 @@
                 &:hover{
                     border:none;
                 }
+            }
+            &-button-register{
+                display: none;
             }
             &-button{
                 height: 100px;

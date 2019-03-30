@@ -14,19 +14,16 @@ export class ContainerComponent extends Component {
     render() {
 
         return (
-            <div className="container">
+            <div className="container" id="login__container">
                 <div className="container__header">
                     <HeaderComponent></HeaderComponent>
                 </div>
                 <div className="container__content-form">
-                <Route path='/main/recovery' component={LoginFormComponent}/>
-                <Route path='/main/auth' component={LoginFormComponent}/>
-                <Route path='/main/registration' component={RegistrationComponent}/>
-                <Route path='/main/university' component={UniversityInfoComponent}/>
-                <Route exact path='/main' component={MainComponent}/>
-                </div>
-                <div className="container__footer">
-                <FooterComponent></FooterComponent>
+                    <Route path='/main/recovery' component={LoginFormComponent}/>
+                    <Route path='/main/auth' component={LoginFormComponent}/>
+                    <Route path='/main/registration' component={RegistrationComponent}/>
+                    <Route path='/main/university' component={UniversityInfoComponent}/>
+                    <Route exact path='/main' component={MainComponent}/>
                 </div>
             </div>
           );

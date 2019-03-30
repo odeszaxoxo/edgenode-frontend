@@ -15,10 +15,11 @@ export const HeaderComponent = () => {
                     <Link to="/info" className="main-header__wrapper-button">About</Link>
                     <Link to="/info" className="main-header__wrapper-button">Projects</Link>
                     <Link to="/info" className="main-header__wrapper-button">Legal</Link>
-                    <Link to="/info" className="main-header__wrapper-button">Partnerships</Link>
+                    <Link to="/info" className="main-header__wrapper-button">Partnership</Link>
                 </div>
-                <Link to="/search" className="main-header__wrapper-button"><i className="material-icons search-icon">search</i></Link>
+                <Link to="/search" className="main-header__wrapper-button-search">Explore</Link>
                 <Link to="/main/auth" className="main-header__wrapper-button-login"><i className="material-icons login-icon">exit_to_app</i><span className="main-header__login-text">Login</span></Link>
+                <Link to="/main/registration" className="main-header__wrapper-button-register"><i className="material-icons login-icon">exit_to_app</i><span className="main-header__login-text">Register</span></Link>
             </div>
         </div>
     );

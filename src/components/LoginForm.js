@@ -28,7 +28,7 @@ export class LoginFormComponent extends Component {
 
         return (
                 <div className="login-form">
-                    <div className="login-form__header">Sign in</div>
+                    <div className="login-form__header">Let's get started</div>
                     <div className="login-form__container">
                         <div className="login-form__textfields">
                             <div className="login-form__textfield">
@@ -44,8 +44,11 @@ export class LoginFormComponent extends Component {
                                 <label className={(this.state.userPassword.length===0 ? "login-form__input-label": "login-form__input-label login-form__input-label_active")}>Password</label>
                             </div>
                         </div>
-                    
-                        <Link to="/profile"><button className="login-form__button" onClick={this.submitForm}>SIGN IN</button></Link>
+                        <div className="login__checkbox">
+                          <input className="login-form__checkbox" type="checkbox" id='w'/>
+                          <label className="login-form__checkbox-label" htmlFor="w">Remember me?</label>
+                        </div>
+                        <Link to="/profile"><button className="login-form__button" onClick={this.submitForm}>LOGIN</button></Link>
                         <div className="login-form__links">
                             <Link to="/main/recovery" className="login-form__link">Forgot password?</Link>
                             <Link to="/main/registration" className="login-form__link">Create new account</Link>
