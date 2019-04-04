@@ -11,14 +11,13 @@ export const InfoHeaderComponent = () => {
                 <Link to="/main"><img className="info-header__wrapper-logo" src={logoDark} alt=""/></Link>
                 <div className="info-header__links">
                     <Link to="/info" className="info-header__wrapper-button">About</Link>
-                    <Link to="/info" className="info-header__wrapper-button">Projects</Link>
+                    <Link to="/info" className="info-header__wrapper-button">News</Link>
                     <Link to="/info" className="info-header__wrapper-button">Legal</Link>
                     <Link to="/info" className="info-header__wrapper-button">Partnerships</Link>
                 </div>
-                <Link to="/search" className="info-header__wrapper-button">
-                <i className="material-icons">search</i>
-                </Link>
+                <Link to="/search" className="info-header__wrapper-button-search">Explore</Link>
                 <Link to="/main/auth" className="info-header__wrapper-button-login"><i className="material-icons info-login">exit_to_app</i><span className="info-header__button-text">Login</span></Link>
+                <Link to="/main/registration" className="info-header__wrapper-button-register"><i className="material-icons login-icon">exit_to_app</i><span className="main-header__login-text">Register</span></Link>
             </div>
         </div>
     );

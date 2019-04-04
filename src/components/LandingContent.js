@@ -92,9 +92,12 @@ individually.</div>
                         </div>
                     </div>
                 </div>
-                <div className="landing-footer__registration">
-                    <h1 className="landing-footer__text">Ready to join in      ?</h1>
-                    <Link to="/main/registration" className="login-form__link"><button className="landing-footer__registration-button">Register</button></Link>
+                <div className="landing-footer__social">
+                    <div className="landing-footer__container">
+                        <a href="https://vk.com" className="landing-footer__container-link"><i className="fab fa-vk"></i></a>
+                        <a href="https://ru.linkedin.com" className="landing-footer__container-link"><i className="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/" className="landing-footer__container-link"><i className="fab fa-facebook-f"></i></a>
+                    </div>
                 </div>
         </div>
     );

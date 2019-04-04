@@ -26,7 +26,7 @@
                 font-weight: 600;
             }
         }
-        &-button-login{
+        &-button-login, &-button-register{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -35,13 +35,36 @@
             height: 40px ;
             width: 127px;
             border-radius: 21px;
-            margin-left: auto;
             cursor: pointer;
             text-decoration: none;
             &:hover{
                 font-weight: 600;
                 border: 2px solid black;
                 background: #f1f1f1;
+            }
+        }
+        &-button-login{
+            margin-left: auto;
+        }
+        &-button-register{
+            margin-left: 20px;
+        }
+        &-button-search{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background-color: white;
+            height:40px ;
+            width: 127px;
+            border: 1px solid black;
+            margin-left: 60px;
+            border-radius: 21px;
+            cursor: pointer;
+            text-decoration: none;
+            &:hover{
+                font-weight: 600;
+                border: 2px solid black;
             }
         }
     }

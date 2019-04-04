@@ -13,7 +13,7 @@ export const HeaderComponent = () => {
                 <Link to="/main"><img className="main-header__wrapper-logo" src={logo} alt=""/></Link>
                 <div className="main-header__links">
                     <Link to="/info" className="main-header__wrapper-button">About</Link>
-                    <Link to="/info" className="main-header__wrapper-button">Projects</Link>
+                    <Link to="/info" className="main-header__wrapper-button">News</Link>
                     <Link to="/info" className="main-header__wrapper-button">Legal</Link>
                     <Link to="/info" className="main-header__wrapper-button">Partnership</Link>
                 </div>
